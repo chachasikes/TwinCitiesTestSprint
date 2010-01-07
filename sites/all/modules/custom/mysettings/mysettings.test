@@ -1,0 +1,94 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Tests for MySettings module.
+ */
+
+/**
+ * Outline of MySettings Test
+ *
+ * Think out what to test
+ * What should the browser be displaying?
+ * How should the browser be behaving?
+ *
+ * TASKS:
+ * Login as user with certain permissions
+ * Go to the page that has the form
+ * Put a value into the form
+ * Use function that 'clicks' the submit button for you
+ * 
+ * EXTRA CREDIT:
+ * Add a test that will test the checkbox value.
+ *
+ */
+
+class MySettingsTest extends DrupalWebTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => t('MySettings Test'),
+      'description' => t('Test that variables can be saved properly.'),
+      'group' => t('MySettings'),
+    );
+  }
+  /**
+   * Set up our test.    
+   */
+  function setUp() {
+    parent::setUp('mysettings');
+    
+    // Create a user with permissions determined by our module.
+    $privileged_user = $this->drupalCreateUser(array('administer mysettings'));
+    // Login the user.
+    $this->drupalLogin($privileged_user);
+  }
+  /**
+   * Test that MySettings settings form works.
+   */
+  function testMySettingsFormSave() {
+    // Set a value that will be saved to the form.
+    $test_value = "This is my test value.";
+
+    // Path that will load the form.
+    $edit_path = "admin/settings/mysettings";
+
+    // Have DrupalWebTest load the page into the invisible web browser.
+    $this->drupalGet($edit_path);
+
+    // Say that the page will have a field with no value.
+    $this->assertFieldById('edit-mysettings-message', '', 'Looking for edit-mysettings-message field as indication that we got to MySettings settings page.', 'MySettings');
+
+    // Create an array of values that should be posted.
+    $edit = array();
+    $edit['mysettings_message'] = $test_value;
+   
+    // Call the post function on the path that contains the form.
+    // Click the 'submit' button, which in this case is called 'Save configuration'
+    $this->drupalPost('admin/settings/mysettings', $edit, t('Save configuration'));
+
+    // For debugging we can output the page so it can be opened with a browser.
+    // Remove this line when the test has been debugged.
+    $this->outputScreenContents("After drupalGet($edit_path) in testMySettingsFormSave", 'testMySettingsFormSave'); 
+
+    // Say that the text "The configuration options have been saved." will be on the redirected page. 
+    $this->assertText(t('The configuration options have been saved.'));
+
+    // If none of these functions validate, parts of the test will fail.
+  }
+  /**
+   * A utility function that dumps an HTML page into a folder in the files directory.
+   * Provides a link in the test interface. This will allow you to see what the invisible 
+   * web browser could see.
+   */
+  private function outputScreenContents($description, $basename) {
+    // This is a hack to get a directory that won't be cleaned up by simpletest
+    $file_dir = file_directory_path().'/../simpletest_output_pages';
+    if (!is_dir($file_dir)) {
+      mkdir($file_dir, 0777, TRUE);
+    }
+    $output_path = "$file_dir/$basename." . $this->randomName(10) . '.html';
+    $rv = file_put_contents($output_path, $this->drupalGetContent());
+    $this->pass("$description: Contents of result page are ".l('here',$output_path));
+  }  
+}

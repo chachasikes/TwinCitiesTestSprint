@@ -1,0 +1,74 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function mysettings_help($section) {
+  switch ($section) {
+    case 'admin/help#mysettings':
+    return '<p>'. t('Demo module for Testing Workshop') .'</p>';
+  }
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function mysettings_perm() {
+  $perms = array('administer mysettings', 'access mysettings');
+  return $perms;
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function mysettings_menu() { 
+  $items = array();
+  // Code extract configuration pages
+  $items['admin/settings/mysettings'] = array(
+    'title' => 'MySettings Settings',
+    'description' => 'Configure MySettings',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('mysettings_admin_settings'),
+    'access arguments' => array('administer mysettings'),
+  );  
+  $items['admin/settings/mysettings/view'] = array(
+    'title' => 'View Settings',
+    'description' => 'These are your settings.',
+    'page callback' => 'mysettings_load_settings',
+    'page arguments' => array('mysettings_load_settingss'),
+    'access arguments' => array('administer mysettings'),
+    // @TODO Add type of menu
+  ); 
+  return $items;
+}
+
+/**
+ * MySettings Administrative settings (Drupal Form)
+ */ 
+function mysettings_admin_settings() {
+  $form = array();
+  // Setting for internal link nodererence field
+  $form['mysettings_show_hide_message'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show/Hide message.'),
+    '#description' => t('True or false.'),
+    '#default_value' => variable_get('mysettings_show_hide_message', '0'),
+  );
+  $form['mysettings_message'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Message'),
+    '#description' => t('Write a message.'),
+    '#default_value' => variable_get('mysettings_message', ''),
+  );
+  // Make system settings form
+  return system_settings_form($form);
+}
+
+function mysettings_load_settings() {
+  return variable_get('mysettings_message', '');
+}

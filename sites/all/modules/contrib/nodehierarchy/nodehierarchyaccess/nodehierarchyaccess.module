@@ -1,0 +1,112 @@
+<?php
+// $Id: nodehierarchyaccess.module,v 1.2 2008/05/14 22:55:07 ronan Exp $
+
+/**
+ * @file
+ * A module to integrate nodehierarchy and nodeaccess.
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function nodehierarchyaccess_help($section) {
+  switch ($section) {
+    case 'admin/help#nodehierarchyaccess':
+      return t('This module integrates nodehierarchy and nodeaccess. With this module enabled, children automatically inherit the grants of their parents. If nodehierarchy and nodeaccess are not enabled, this module does nothing.');
+  }
+}
+
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function nodehierarchyaccess_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+
+  // don't do anything unless nodeaccess and nodehierarchy are installed and the node has an assigned parent
+  if ( !module_exists( "nodeaccess" ) || !module_exists( "nodehierarchy" ) || !isset( $node->parent ) || !$node->parent ) {
+    return;
+  }
+
+  switch ( $op ) {
+    case 'insert':
+    case 'update':
+      // if the parent is not the same, copy the new parent's grants
+      if ( $node->parent != $node->old_parent ) {
+        _nodehierarchyaccess_copy_parent_grants( $node );
+      }
+    break;
+  }
+}
+
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function nodehierarchyaccess_form_alter($form_id, &$form) {
+
+  // don't do anything unless nodeaccess and nodehierarchy are installed
+  if ( !module_exists( "nodeaccess" ) || !module_exists( "nodehierarchy" ) ) {
+    return;
+  }
+
+  switch ( $form_id ) {
+    case "nodeaccess_grants_form":
+      $form['#submit']['nodehierarchyaccess_page_form_submit'] = array();
+    break;
+  }
+}
+
+
+/**
+ * Callback for the nodeaccess form submit
+ */
+function nodehierarchyaccess_page_form_submit($form_id, $form_values) {
+  global $user;
+  $grants = array();
+  $nid = $form_values['nid'];
+  $grants = _nodehierarchyaccess_get_node_grants( $nid );
+  _nodehierarchyaccess_set_descendant_grants( $nid, $grants );
+}
+
+
+/* private functions */
+
+/**
+ * Copy a node's parent's grants to the given node.
+ */
+function _nodehierarchyaccess_copy_parent_grants( $node ) {
+  if ( isset( $node->parent ) && $node->parent ) {
+    // get the parent node grants and assign to the node.
+    $grants = _nodehierarchyaccess_get_node_grants( $node->parent );
+    // save the node itself
+    node_access_write_grants( $node, $grants );
+    _nodeaccess_save_new($node->nid, $grants);
+    // copy grants to the descendants of the node
+    _nodehierarchyaccess_set_descendant_grants( $node->nid, $grants );
+  }
+}
+
+/**
+ *  Set the given grants for the given node and it's descentants
+ */
+function _nodehierarchyaccess_set_descendant_grants( $nid, $grants ) {
+  // copy grants to the descendants of the node
+  foreach ( nodehierarchy_get_descendant_list($nid) as $descendant_nid ) {
+    $node = new stdClass();
+    $node->nid = $descendant_nid;
+    node_access_write_grants( $node, $grants );
+    _nodeaccess_save_new($descendant_nid, $grants);
+  }
+}
+
+
+/**
+ * Get the grants for the given node.
+ */
+function _nodehierarchyaccess_get_node_grants( $nid ) {
+  $node = new stdClass();
+  $node->nid = $nid;
+  return ( nodeaccess_node_access_records($node) );
+}
+
+?>

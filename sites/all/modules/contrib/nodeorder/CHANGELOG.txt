@@ -1,0 +1,22 @@
+// $Id: CHANGELOG.txt,v 1.1.2.5 2009/11/15 14:20:13 pvanderspek Exp $
+
+nodeorder 6.x-1.x, xxxx-xx-xx
+---------------------------
+
+
+nodeorder 6.x-1.1, xxxx-xx-xx
+---------------------------
+#394740 by kndr: use theme function inside nodeorder_term_page
+#242077 by pvanderspek: make order nodes tab at admin/content/taxonomy/% optional
+#259267 by pvanderspek: cache the results of nodeorder_can_be_ordered and nodeorder_orderable_tids
+#107860 by marcp, pvanderspek: nodeorder should not show move up / down link when it does not apply
+#613030 by lportela: PostgreSQL support; make sure all columns used in ORDER-clause occur in SELECT-clause as well
+#631858 by tuffnatty: nodeorder.js sometimes enables wrong submit button
+
+nodeorder 6.x-1.0, 2009-03-02
+---------------------------
+#252431 by pvanderspek, gunspae: 6.x port. Takes advantage of core drag and drop.
+#355818 by gunspae: take advantage of the new installation procedure and added uninstall
+#241169 by pvanderspek: displaying link to to noder/term/x has been made configurable
+#241214 by pvanderspek: replaced link to nodeorder-page with a menu-tab
+upgraded Views integration to work with Views 2
