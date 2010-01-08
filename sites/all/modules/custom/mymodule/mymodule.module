@@ -1,0 +1,60 @@
+<?php
+/**
+* Implementation of hook_node_info().
+*/
+function mymodule_node_info() {
+  return array(
+    'mymodule' => array(
+      'name' => t('mymodule page'),
+      'module' => 'mymodule',
+      'description' => t('mymodule page node type.'),
+    )
+  );
+}
+
+function mymodule_perm() {
+  return array('create mymodule', 'edit own mymodule');
+}
+
+/**
+ * Implementation of hook_access().
+ */
+function mymodule_access($op, $node) {
+  global $user;
+
+  if ($op == 'create') {
+    return (user_access('create mymodule'));
+  }
+
+  // This code has a BUG that we'll find in testing
+  // Correct version
+  // if ($op == 'update' || $op == 'delete') {
+
+  // Incorrect version we'll use to demonstrate test failure. We were always testing
+  // with User 1!
+  if ($op == 'delete') {
+    return (user_access('edit own mymodule') && ($user->uid == $node->uid));
+  }
+}
+/**
+* Implementation of hook_form().
+*/
+function mymodule_form(&$node) {
+  $type = node_get_types('type', $node);
+
+  if ($type->has_title) {
+    $form['title'] = array(
+      '#type' => 'textfield',
+      '#title' => check_plain($type->title_label),
+      '#required' => TRUE,
+      '#default_value' => $node->title,
+      '#weight' => -5
+    );
+  }
+
+  if ($type->has_body) {
+    $form['body_field'] = node_body_field($node, $type->body_label, $type->min_word_count);
+  }
+
+  return $form;
+}
