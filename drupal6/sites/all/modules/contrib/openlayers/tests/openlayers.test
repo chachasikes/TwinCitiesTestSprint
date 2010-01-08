@@ -1,0 +1,49 @@
+<?php
+// $Id: openlayers.test,v 1.1.2.1 2009/09/21 04:02:19 zzolo Exp $
+
+/**
+ * @file
+ * Main OpenLayers Test file
+ *
+ * This file contains the tests for the openlayers
+ * module.  Please note that since this module
+ * depends heavily on Javascript, these tests are
+ * limited in ensuring that the OpenLayers module
+ * functions 100% correctly.
+ *
+ * @ingroup openlayers
+ */
+
+/**
+ * Test OpenLayers presets.
+ */
+class OpenLayersPresetsHook extends DrupalWebTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'OpenLayers Presets Hook',
+      'description' => 'Tests the OpenLayers Preset hook.',
+      'group' => 'OpenLayers',
+    );
+  }
+
+  function setUp() {
+    // Install modules
+    parent::setUp('openlayers', 'openlayers_presets_ui', 'openlayers_test');
+  }
+
+  /**
+   * Ensure that the preset shows up in the interface
+   */
+  function testOpenLayersPresetsHook() {
+    $user = $this->drupalCreateUser(array('administer openlayers'));
+    $this->drupalLogin($user);
+
+    // Go to preset page
+    $this->drupalGet('admin/settings/openlayers/presets/list');
+    $this->assertResponse(200, t('Assert that user can reach and access preset list.'));
+
+    // Ensure that the default test is listed
+    $this->assertText(t('Default Test Map'), t('Assert that the default test preset\'s title appears.'));
+    $this->assertText(t('This is a test preset.'), t('Assert that the default test preset\'s description appears.'));
+  }
+}

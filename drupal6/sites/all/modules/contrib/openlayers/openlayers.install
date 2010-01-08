@@ -1,0 +1,75 @@
+<?php
+// $Id: openlayers.install,v 1.10.2.2 2009/08/06 04:42:05 binarybill Exp $
+
+/**
+ * @file
+ * This file holds the functions for the installing
+ * and enabling of the openlayers module.
+ *
+ * @ingroup openlayers
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function openlayers_install() {
+  // Create tables
+  drupal_install_schema('openlayers');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function openlayers_uninstall() {
+  // Remove tables
+  drupal_uninstall_schema('openlayers');
+
+  // Get module variables
+  $results = db_query("SELECT v.name FROM {variable} AS v WHERE v.name LIKE '%s%%'", 'openlayers_');
+  // Remove variables
+  while ($row = db_fetch_array($results)) {
+    variable_del($row['name']);
+  }
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function openlayers_schema() {
+  $schema['openlayers_map_presets'] = array(
+    'fields' => array(
+      'preset_id' => array(
+        'description' => t('The primary identifier for an OpenLayers preset.'),
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'preset_name' => array(
+        'description' => t('The primary identifier for the preset.'),
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'preset_title' => array(
+        'description' => t('The title of the preset.'),
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'preset_description' => array(
+        'description' => t('The description of the preset.'),
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
+      'preset_data' => array(
+        'description' => t('The serialized map.'),
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('preset_id'),
+    'unique key' => array('preset_name'),
+  );
+
+  return $schema;
+}

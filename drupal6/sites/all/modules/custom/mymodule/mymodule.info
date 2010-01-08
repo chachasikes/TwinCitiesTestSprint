@@ -1,0 +1,4 @@
+name = mymodule
+description = Provides mymodule page node type.
+core = 6.x
+files[] = mymodule.module
