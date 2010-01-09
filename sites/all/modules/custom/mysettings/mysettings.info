@@ -1,5 +1,0 @@
-; $Id$
-name = MySettings
-description = Demo module for test writing workshop
-package = TestSprint
-core = 6.x
