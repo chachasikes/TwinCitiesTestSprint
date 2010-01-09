@@ -1,0 +1,112 @@
+\hypertarget{simpletest_8pages_8inc}{
+\section{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest.pages.inc File Reference}
+\label{simpletest_8pages_8inc}\index{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest.pages.inc@{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest.pages.inc}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{simpletest_8pages_8inc_ab617b800aa9c77c9456131e0beb65bef}{simpletest\_\-test\_\-form} ()
+\item 
+\hyperlink{simpletest_8pages_8inc_aa6be38ebfa5a4fb31f3e786c3e4aa415}{theme\_\-simpletest\_\-test\_\-table} (\$table)
+\item 
+\hyperlink{simpletest_8pages_8inc_a2fd122eb416ff956a0856b771a0e2650}{\_\-simpletest\_\-sort\_\-by\_\-title} (\$a, \$b)
+\item 
+\hyperlink{simpletest_8pages_8inc_ae93012096feaf92ea177eaf496e51356}{simpletest\_\-test\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{simpletest_8pages_8inc_aa718f24f482932ac038c6ed8f4a0f082}{simpletest\_\-result\_\-form} (\&\$form\_\-state, \$test\_\-id)
+\item 
+\hyperlink{simpletest_8pages_8inc_aa49754acf61555f23482a0257db56da2}{simpletest\_\-result\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{simpletest_8pages_8inc_a367c96f8ea59a3c5b7e45a27fc420779}{theme\_\-simpletest\_\-result\_\-summary} (\$form)
+\item 
+\hyperlink{simpletest_8pages_8inc_a36d253fe9ff7de21a484f1bb0ff9b5a6}{simpletest\_\-result\_\-get} (\$test\_\-id)
+\item 
+\hyperlink{simpletest_8pages_8inc_a113abd1a787e904816f29e409b4385ea}{simpletest\_\-result\_\-status\_\-image} (\$status)
+\item 
+\hyperlink{simpletest_8pages_8inc_a7ed68a2cea79c9d146dc370b3787defd}{simpletest\_\-settings\_\-form} (\&\$form\_\-state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Page callbacks for simpletest module. 
+
+\subsection{Function Documentation}
+\hypertarget{simpletest_8pages_8inc_a2fd122eb416ff956a0856b771a0e2650}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!\_\-simpletest\_\-sort\_\-by\_\-title@{\_\-simpletest\_\-sort\_\-by\_\-title}}
+\index{\_\-simpletest\_\-sort\_\-by\_\-title@{\_\-simpletest\_\-sort\_\-by\_\-title}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{\_\-simpletest\_\-sort\_\-by\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}\_\-simpletest\_\-sort\_\-by\_\-title (\$ {\em a}, \/  \$ {\em b})}}
+\label{simpletest_8pages_8inc_a2fd122eb416ff956a0856b771a0e2650}
+Sort element by title instead of by class name. \hypertarget{simpletest_8pages_8inc_aa718f24f482932ac038c6ed8f4a0f082}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-result\_\-form@{simpletest\_\-result\_\-form}}
+\index{simpletest\_\-result\_\-form@{simpletest\_\-result\_\-form}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-result\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-result\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em test\_\-id})}}
+\label{simpletest_8pages_8inc_aa718f24f482932ac038c6ed8f4a0f082}
+Test results form for \$test\_\-id. \hypertarget{simpletest_8pages_8inc_aa49754acf61555f23482a0257db56da2}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-result\_\-form\_\-submit@{simpletest\_\-result\_\-form\_\-submit}}
+\index{simpletest\_\-result\_\-form\_\-submit@{simpletest\_\-result\_\-form\_\-submit}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-result\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-result\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{simpletest_8pages_8inc_aa49754acf61555f23482a0257db56da2}
+Re-\/run the tests that match the filter. \hypertarget{simpletest_8pages_8inc_a36d253fe9ff7de21a484f1bb0ff9b5a6}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-result\_\-get@{simpletest\_\-result\_\-get}}
+\index{simpletest\_\-result\_\-get@{simpletest\_\-result\_\-get}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-result\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-result\_\-get (\$ {\em test\_\-id})}}
+\label{simpletest_8pages_8inc_a36d253fe9ff7de21a484f1bb0ff9b5a6}
+Get test results for \$test\_\-id.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$test\_\-id}]The test\_\-id to retrieve results of. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of results grouped by test\_\-class. 
+\end{DoxyReturn}
+\hypertarget{simpletest_8pages_8inc_a113abd1a787e904816f29e409b4385ea}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-result\_\-status\_\-image@{simpletest\_\-result\_\-status\_\-image}}
+\index{simpletest\_\-result\_\-status\_\-image@{simpletest\_\-result\_\-status\_\-image}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-result\_\-status\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-result\_\-status\_\-image (\$ {\em status})}}
+\label{simpletest_8pages_8inc_a113abd1a787e904816f29e409b4385ea}
+Get the appropriate image for the status.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$status}]Status string, either: pass, fail, exception. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HTML image or false. 
+\end{DoxyReturn}
+\hypertarget{simpletest_8pages_8inc_a7ed68a2cea79c9d146dc370b3787defd}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-settings\_\-form@{simpletest\_\-settings\_\-form}}
+\index{simpletest\_\-settings\_\-form@{simpletest\_\-settings\_\-form}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-settings\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-settings\_\-form (\&\$ {\em form\_\-state})}}
+\label{simpletest_8pages_8inc_a7ed68a2cea79c9d146dc370b3787defd}
+Provides settings form for \hyperlink{class_simple_test}{SimpleTest} variables. \hypertarget{simpletest_8pages_8inc_ab617b800aa9c77c9456131e0beb65bef}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-test\_\-form@{simpletest\_\-test\_\-form}}
+\index{simpletest\_\-test\_\-form@{simpletest\_\-test\_\-form}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-test\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-test\_\-form ()}}
+\label{simpletest_8pages_8inc_ab617b800aa9c77c9456131e0beb65bef}
+List tests arranged in groups that can be selected and run. \hypertarget{simpletest_8pages_8inc_ae93012096feaf92ea177eaf496e51356}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!simpletest\_\-test\_\-form\_\-submit@{simpletest\_\-test\_\-form\_\-submit}}
+\index{simpletest\_\-test\_\-form\_\-submit@{simpletest\_\-test\_\-form\_\-submit}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{simpletest\_\-test\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-test\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{simpletest_8pages_8inc_ae93012096feaf92ea177eaf496e51356}
+Run selected tests. \hypertarget{simpletest_8pages_8inc_a367c96f8ea59a3c5b7e45a27fc420779}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!theme\_\-simpletest\_\-result\_\-summary@{theme\_\-simpletest\_\-result\_\-summary}}
+\index{theme\_\-simpletest\_\-result\_\-summary@{theme\_\-simpletest\_\-result\_\-summary}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{theme\_\-simpletest\_\-result\_\-summary}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-simpletest\_\-result\_\-summary (\$ {\em form})}}
+\label{simpletest_8pages_8inc_a367c96f8ea59a3c5b7e45a27fc420779}
+Add wrapper div with class based on summary status.
+
+\begin{DoxyReturn}{Returns}
+HTML output. 
+\end{DoxyReturn}
+\hypertarget{simpletest_8pages_8inc_aa6be38ebfa5a4fb31f3e786c3e4aa415}{
+\index{simpletest.pages.inc@{simpletest.pages.inc}!theme\_\-simpletest\_\-test\_\-table@{theme\_\-simpletest\_\-test\_\-table}}
+\index{theme\_\-simpletest\_\-test\_\-table@{theme\_\-simpletest\_\-test\_\-table}!simpletest.pages.inc@{simpletest.pages.inc}}
+\subsubsection[{theme\_\-simpletest\_\-test\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-simpletest\_\-test\_\-table (\$ {\em table})}}
+\label{simpletest_8pages_8inc_aa6be38ebfa5a4fb31f3e786c3e4aa415}
+Theme the test list generated by \hyperlink{simpletest_8pages_8inc_ab617b800aa9c77c9456131e0beb65bef}{simpletest\_\-test\_\-form()} into a table.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$table}]Form array that represent a table. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HTML output. 
+\end{DoxyReturn}

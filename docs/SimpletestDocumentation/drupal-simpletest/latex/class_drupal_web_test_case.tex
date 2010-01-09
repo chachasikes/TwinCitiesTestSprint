@@ -1,0 +1,1024 @@
+\hypertarget{class_drupal_web_test_case}{
+\section{DrupalWebTestCase Class Reference}
+\label{class_drupal_web_test_case}\index{DrupalWebTestCase@{DrupalWebTestCase}}
+}
+Inheritance diagram for DrupalWebTestCase::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_drupal_web_test_case}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_drupal_web_test_case_a76d165c12dc6042bae017b5c521e6ffa}{\_\-\_\-construct} (\$test\_\-id=NULL)
+\item 
+\hyperlink{class_drupal_web_test_case_ae3312c84795861f1bb35c226ef700903}{drupalGetNodeByTitle} (\$title)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_drupal_web_test_case_a73daf1ecd169e59a2acc47d57f06572f}{drupalCreateNode} (\$settings=array())
+\item 
+\hyperlink{class_drupal_web_test_case_a880b99e54830cd0a56e2f37b65ec337f}{drupalCreateContentType} (\$settings=array())
+\item 
+\hyperlink{class_drupal_web_test_case_ad1439acbfb7b5cd34e851d49106ba92f}{drupalGetTestFiles} (\$type, \$size=NULL)
+\item 
+\hyperlink{class_drupal_web_test_case_a7bdda4e6c7063f5dbcfecb1c70a03432}{drupalCompareFiles} (\$file1, \$file2)
+\item 
+\hyperlink{class_drupal_web_test_case_ad39222df2e8243c419d465bbe48b0713}{drupalCreateUser} (\$permissions=array('access comments', 'access content', 'post comments', 'post comments without approval'))
+\item 
+\hyperlink{class_drupal_web_test_case_ac704af37ef0e0d824af1407265bf750d}{drupalCreateRole} (array \$permissions, \$name=NULL)
+\item 
+\hyperlink{class_drupal_web_test_case_a12e53962cb95e9f6eb86efcc09b08615}{checkPermissions} (array \$permissions, \$reset=FALSE)
+\item 
+\hyperlink{class_drupal_web_test_case_adb24a311afdca9c565f3556fafb8044f}{drupalLogin} (stdClass \$user)
+\item 
+\hyperlink{class_drupal_web_test_case_a737d7788ee07da4f0184b6d489694070}{drupalGetToken} (\$value= '')
+\item 
+\hypertarget{class_drupal_web_test_case_a42e774876bd06cda74024379a3159896}{
+{\bfseries drupalLogout} ()}
+\label{class_drupal_web_test_case_a42e774876bd06cda74024379a3159896}
+
+\item 
+\hyperlink{class_drupal_web_test_case_a110ecf5deb57ee6a908617360c1f6ec4}{setUp} ()
+\item 
+\hyperlink{class_drupal_web_test_case_ad82b8c5cdc60fb19c9550ab7ba3fd017}{refreshVariables} ()
+\item 
+\hyperlink{class_drupal_web_test_case_a6c0dba3c89c4aab3fa2576857c6f2be1}{tearDown} ()
+\item 
+\hyperlink{class_drupal_web_test_case_a8c51d47f5b89aad9f5e7fc4fa001bf05}{curlInitialize} ()
+\item 
+\hyperlink{class_drupal_web_test_case_aa559e47572bc90f0c8ccd1aef86fd95f}{curlExec} (\$curl\_\-options)
+\item 
+\hyperlink{class_drupal_web_test_case_a7993c14e1d81d759a6b3903764bb0e46}{curlHeaderCallback} (\$curlHandler, \$header)
+\item 
+\hyperlink{class_drupal_web_test_case_a0b3eb01ee1312ea28f78fc1a293835be}{curlClose} ()
+\item 
+\hyperlink{class_drupal_web_test_case_a19289cdf27c85cad8e10960769d1e28b}{parse} ()
+\item 
+\hyperlink{class_drupal_web_test_case_ae282e9e10195fb8dad8a49d1b35e31c9}{drupalGet} (\$path, array \$options=array(), array \$headers=array())
+\item 
+\hyperlink{class_drupal_web_test_case_aa773e6bf6ff8d0085dc60fb6d9ba888e}{drupalPost} (\$path, \$edit, \$submit, array \$options=array(), array \$headers=array())
+\item 
+\hyperlink{class_drupal_web_test_case_a639bf5d4e0892c7d3659c224a609183c}{checkForMetaRefresh} ()
+\item 
+\hyperlink{class_drupal_web_test_case_adfed12ec9ae7e71a0de659894d5b171d}{drupalHead} (\$path, array \$options=array(), array \$headers=array())
+\item 
+\hyperlink{class_drupal_web_test_case_af28fa56d6175e845d39c2db518544633}{handleForm} (\&\$post, \&\$edit, \&\$upload, \$submit, \$form)
+\item 
+\hyperlink{class_drupal_web_test_case_a6442bac68174cd9c13277515573728e9}{xpath} (\$xpath)
+\item 
+\hyperlink{class_drupal_web_test_case_a242a13b4aaf558f5b4030c0ad2b3789c}{getAllOptions} (SimpleXMLElement \$element)
+\item 
+\hyperlink{class_drupal_web_test_case_aa78cd0d7454235fcad55aaf14a77ed40}{assertLink} (\$label, \$index=0, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_aebe9c02edc5edcf8e0b97d5c9742070b}{assertNoLink} (\$label, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_a716c6eef22f216695376ea5b531ce9a1}{clickLink} (\$label, \$index=0)
+\item 
+\hyperlink{class_drupal_web_test_case_ab170c2353296a22d88f4c7da58418d57}{getAbsoluteUrl} (\$path)
+\item 
+\hyperlink{class_drupal_web_test_case_a71fa7ff2a1b0b76829605458e875c9a0}{getUrl} ()
+\item 
+\hyperlink{class_drupal_web_test_case_a9bbd6c61b69af17eeb79d59b1632a691}{drupalGetHeaders} (\$all\_\-requests=FALSE)
+\item 
+\hyperlink{class_drupal_web_test_case_a2a5d661d1f61cf9ac2c8bb5969d5d373}{drupalGetHeader} (\$name, \$all\_\-requests=FALSE)
+\item 
+\hyperlink{class_drupal_web_test_case_a65cc4334da96452d127a9fb50636e7bb}{drupalGetContent} ()
+\item 
+\hyperlink{class_drupal_web_test_case_af2c147ab7789a251a27aa88a70282432}{drupalGetMails} (\$filter=array())
+\item 
+\hyperlink{class_drupal_web_test_case_a75c4e29bdb78951d61993b13985bad1c}{drupalSetContent} (\$content, \$url= 'internal:')
+\item 
+\hyperlink{class_drupal_web_test_case_ae15c8d3302ff90dc47d2fd7686ee4005}{assertRaw} (\$raw, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_ae683aebc33c05b0ba2e7e3f06f4485a9}{assertNoRaw} (\$raw, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_ad721f3f08df154f1ccaf7b8ab0d2d9d0}{assertText} (\$text, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_aa2d5a43e1615b89589b7c8b2a2e4f487}{assertNoText} (\$text, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_a870c322ff86add51471f4b39905111d7}{assertTextHelper} (\$text, \$message, \$group, \$not\_\-exists)
+\item 
+\hyperlink{class_drupal_web_test_case_aa8d65b2749e7d0430b07bd77f7f4877b}{assertUniqueText} (\$text, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_a058c82a867e22a61b68891a009294e7b}{assertNoUniqueText} (\$text, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_aa853442f9c99a2205c56db88065b58b5}{assertUniqueTextHelper} (\$text, \$message, \$group, \$be\_\-unique)
+\item 
+\hyperlink{class_drupal_web_test_case_a5838fb78298156ab4de6a2ff5cdc4f8b}{assertPattern} (\$pattern, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_a03d422398b9fc1f8844b7ff7fe468ed5}{assertNoPattern} (\$pattern, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_ae51a8bfe2db3ab2e5a7373738f843624}{assertTitle} (\$title, \$message, \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_aa019d62a843ffe740b9456f316838924}{assertNoTitle} (\$title, \$message, \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_af7479a905b9933e14dcfb5585b03361f}{assertFieldByXPath} (\$xpath, \$value, \$message, \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_a4f24b7eddfb7d495f4ad8592f0b24929}{getSelectedItem} (SimpleXMLElement \$element)
+\item 
+\hyperlink{class_drupal_web_test_case_a8997cdd692056a6b4d1f79ced1dcf692}{assertNoFieldByXPath} (\$xpath, \$value, \$message, \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_ad2df17adcfef4a514e78c6a287022690}{assertFieldByName} (\$name, \$value= '', \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_a323f24e8b6dcf37ae100ad7102ee85db}{assertNoFieldByName} (\$name, \$value= '', \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_ad3779958ca911e96582177f110278111}{assertFieldById} (\$id, \$value= '', \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_adbaec19474181965ddd70c6ee273d113}{assertNoFieldById} (\$id, \$value= '', \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_aea0ec61d9b9f476c5b23cb0111bda4b7}{assertFieldChecked} (\$id, \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_a23fbbe9b681b00419a0023ef07b48067}{assertNoFieldChecked} (\$id, \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_a3955b3b90e4688bbd6f8fa0c5b47bfbe}{assertField} (\$field, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_a450b5b0be6615e14e94415e087c31706}{assertNoField} (\$field, \$message= '', \$group= 'Other')
+\item 
+\hyperlink{class_drupal_web_test_case_afec52d7a3b6e492c3230dcc2b22bd7bb}{constructFieldXpath} (\$attribute, \$value)
+\item 
+\hyperlink{class_drupal_web_test_case_af414857cce5491ca01a2f7ea9d2d60bf}{assertResponse} (\$code, \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_ad318f30726058caea940c1aeed1bd182}{assertMail} (\$name, \$value= '', \$message= '')
+\item 
+\hyperlink{class_drupal_web_test_case_a46e4ad5abf681eff423f6b6de5d9f361}{verbose} (\$message)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_drupal_web_test_case_a4602319c57e56cfd4de80d3d58d99c33}{
+{\bfseries \$url}}
+\label{class_drupal_web_test_case_a4602319c57e56cfd4de80d3d58d99c33}
+
+\item 
+\hypertarget{class_drupal_web_test_case_adcb3393cbfce2d08945b059fa0982b92}{
+{\bfseries \$curlHandle}}
+\label{class_drupal_web_test_case_adcb3393cbfce2d08945b059fa0982b92}
+
+\item 
+\hypertarget{class_drupal_web_test_case_a1a571a6bfdae7765a8e0d4431938d113}{
+{\bfseries \$headers}}
+\label{class_drupal_web_test_case_a1a571a6bfdae7765a8e0d4431938d113}
+
+\item 
+\hypertarget{class_drupal_web_test_case_a2c8714ff957ba172102f9bfe70af25ee}{
+{\bfseries \$content}}
+\label{class_drupal_web_test_case_a2c8714ff957ba172102f9bfe70af25ee}
+
+\item 
+\hypertarget{class_drupal_web_test_case_a30f2d25c0f3771ee04989bbf18831255}{
+{\bfseries \$plainTextContent}}
+\label{class_drupal_web_test_case_a30f2d25c0f3771ee04989bbf18831255}
+
+\item 
+\hypertarget{class_drupal_web_test_case_a27ca1fb44586c85ca1998ca9651e8050}{
+{\bfseries \$elements} = NULL}
+\label{class_drupal_web_test_case_a27ca1fb44586c85ca1998ca9651e8050}
+
+\item 
+\hypertarget{class_drupal_web_test_case_ab6dfacb280e215891cbc5fc4f1df5813}{
+{\bfseries \$loggedInUser} = FALSE}
+\label{class_drupal_web_test_case_ab6dfacb280e215891cbc5fc4f1df5813}
+
+\item 
+\hyperlink{class_drupal_web_test_case_abee07354ff94d9b036c7b2e1b1855176}{\$cookieFile} = NULL
+\item 
+\hyperlink{class_drupal_web_test_case_a8e4e1c5a9b63d403d10ad2f6a2f06aaa}{\$additionalCurlOptions} = array()
+\item 
+\hypertarget{class_drupal_web_test_case_a110c8164d28753a6cee415f8e199c63f}{
+{\bfseries \$originalUser} = NULL}
+\label{class_drupal_web_test_case_a110c8164d28753a6cee415f8e199c63f}
+
+\item 
+\hyperlink{class_drupal_web_test_case_a1d8ed55611dfba216fc9a7eaaca59b8d}{\$httpauth\_\-credentials} = NULL
+\item 
+\hyperlink{class_drupal_web_test_case_acb07ddaedaef0c5d08610666ec74cb45}{\$session\_\-name} = NULL
+\item 
+\hyperlink{class_drupal_web_test_case_a2f8ec9f9c31df56f5502f473e7b78e31}{\$session\_\-id} = NULL
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Test case for typical Drupal tests. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_drupal_web_test_case_a76d165c12dc6042bae017b5c521e6ffa}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::\_\-\_\-construct (\$ {\em test\_\-id} = {\ttfamily NULL})}}
+\label{class_drupal_web_test_case_a76d165c12dc6042bae017b5c521e6ffa}
+Constructor for \hyperlink{class_drupal_web_test_case}{DrupalWebTestCase}. 
+
+Reimplemented from \hyperlink{class_drupal_test_case_abb2516192da25b89bec5f5a4a7e91aab}{DrupalTestCase}.
+
+\subsection{Member Function Documentation}
+\hypertarget{class_drupal_web_test_case_a3955b3b90e4688bbd6f8fa0c5b47bfbe}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertField@{assertField}}
+\index{assertField@{assertField}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertField}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertField (\$ {\em field}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a3955b3b90e4688bbd6f8fa0c5b47bfbe}
+Assert that a field exists with the given name or id.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$field}]Name or id of field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad3779958ca911e96582177f110278111}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertFieldById@{assertFieldById}}
+\index{assertFieldById@{assertFieldById}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertFieldById}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertFieldById (\$ {\em id}, \/  \$ {\em value} = {\ttfamily ''}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad3779958ca911e96582177f110278111}
+Assert that a field exists in the current page with the given id and value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$id}]Id of field to assert. \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad2df17adcfef4a514e78c6a287022690}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertFieldByName@{assertFieldByName}}
+\index{assertFieldByName@{assertFieldByName}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertFieldByName}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertFieldByName (\$ {\em name}, \/  \$ {\em value} = {\ttfamily ''}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad2df17adcfef4a514e78c6a287022690}
+Assert that a field exists in the current page with the given name and value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$name}]Name of field to assert. \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_af7479a905b9933e14dcfb5585b03361f}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertFieldByXPath@{assertFieldByXPath}}
+\index{assertFieldByXPath@{assertFieldByXPath}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertFieldByXPath}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertFieldByXPath (\$ {\em xpath}, \/  \$ {\em value}, \/  \$ {\em message}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_af7479a905b9933e14dcfb5585b03361f}
+Assert that a field exists in the current page by the given XPath.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$xpath}]XPath used to find the field. \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aea0ec61d9b9f476c5b23cb0111bda4b7}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertFieldChecked@{assertFieldChecked}}
+\index{assertFieldChecked@{assertFieldChecked}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertFieldChecked}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertFieldChecked (\$ {\em id}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aea0ec61d9b9f476c5b23cb0111bda4b7}
+Assert that a checkbox field in the current page is checked.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$id}]Id of field to assert. \item[{\em \$message}]Message to display. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aa78cd0d7454235fcad55aaf14a77ed40}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertLink@{assertLink}}
+\index{assertLink@{assertLink}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertLink}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertLink (\$ {\em label}, \/  \$ {\em index} = {\ttfamily 0}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa78cd0d7454235fcad55aaf14a77ed40}
+Pass if a link with the specified label is found, and optional with the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$label}]Text between the anchor tags. \item[{\em \$index}]Link position counting from zero. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if the assertion succeeded, FALSE otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad318f30726058caea940c1aeed1bd182}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertMail@{assertMail}}
+\index{assertMail@{assertMail}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertMail}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertMail (\$ {\em name}, \/  \$ {\em value} = {\ttfamily ''}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad318f30726058caea940c1aeed1bd182}
+Assert that the most recently sent e-\/mail message has a field with the given value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$name}]Name of field or message property to assert. Examples: subject, body, id, ... \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a450b5b0be6615e14e94415e087c31706}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoField@{assertNoField}}
+\index{assertNoField@{assertNoField}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoField}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoField (\$ {\em field}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a450b5b0be6615e14e94415e087c31706}
+Assert that a field does not exist with the given name or id.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$field}]Name or id of field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_adbaec19474181965ddd70c6ee273d113}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoFieldById@{assertNoFieldById}}
+\index{assertNoFieldById@{assertNoFieldById}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoFieldById}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoFieldById (\$ {\em id}, \/  \$ {\em value} = {\ttfamily ''}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_adbaec19474181965ddd70c6ee273d113}
+Assert that a field does not exist with the given id and value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$id}]Id of field to assert. \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a323f24e8b6dcf37ae100ad7102ee85db}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoFieldByName@{assertNoFieldByName}}
+\index{assertNoFieldByName@{assertNoFieldByName}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoFieldByName}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoFieldByName (\$ {\em name}, \/  \$ {\em value} = {\ttfamily ''}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a323f24e8b6dcf37ae100ad7102ee85db}
+Assert that a field does not exist with the given name and value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$name}]Name of field to assert. \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a8997cdd692056a6b4d1f79ced1dcf692}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoFieldByXPath@{assertNoFieldByXPath}}
+\index{assertNoFieldByXPath@{assertNoFieldByXPath}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoFieldByXPath}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoFieldByXPath (\$ {\em xpath}, \/  \$ {\em value}, \/  \$ {\em message}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a8997cdd692056a6b4d1f79ced1dcf692}
+Assert that a field does not exist in the current page by the given XPath.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$xpath}]XPath used to find the field. \item[{\em \$value}]Value of the field to assert. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a23fbbe9b681b00419a0023ef07b48067}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoFieldChecked@{assertNoFieldChecked}}
+\index{assertNoFieldChecked@{assertNoFieldChecked}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoFieldChecked}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoFieldChecked (\$ {\em id}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a23fbbe9b681b00419a0023ef07b48067}
+Assert that a checkbox field in the current page is not checked.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$id}]Id of field to assert. \item[{\em \$message}]Message to display. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aebe9c02edc5edcf8e0b97d5c9742070b}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoLink@{assertNoLink}}
+\index{assertNoLink@{assertNoLink}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoLink}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoLink (\$ {\em label}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aebe9c02edc5edcf8e0b97d5c9742070b}
+Pass if a link with the specified label is not found.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$label}]Text between the anchor tags. \item[{\em \$index}]Link position counting from zero. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if the assertion succeeded, FALSE otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a03d422398b9fc1f8844b7ff7fe468ed5}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoPattern@{assertNoPattern}}
+\index{assertNoPattern@{assertNoPattern}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoPattern}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoPattern (\$ {\em pattern}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a03d422398b9fc1f8844b7ff7fe468ed5}
+Will trigger a pass if the perl regex pattern is not present in raw content.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$pattern}]Perl regex to look for including the regex delimiters. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ae683aebc33c05b0ba2e7e3f06f4485a9}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoRaw@{assertNoRaw}}
+\index{assertNoRaw@{assertNoRaw}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoRaw}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoRaw (\$ {\em raw}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ae683aebc33c05b0ba2e7e3f06f4485a9}
+Pass if the raw text is NOT found on the loaded page, fail otherwise. Raw text refers to the raw HTML that the page generated.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$raw}]Raw (HTML) string to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aa2d5a43e1615b89589b7c8b2a2e4f487}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoText@{assertNoText}}
+\index{assertNoText@{assertNoText}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoText}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoText (\$ {\em text}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa2d5a43e1615b89589b7c8b2a2e4f487}
+Pass if the text is NOT found on the text version of the page. The text version is the equivalent of what a user would see when viewing through a web browser. In other words the HTML has been filtered out of the contents.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$text}]Plain text to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aa019d62a843ffe740b9456f316838924}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoTitle@{assertNoTitle}}
+\index{assertNoTitle@{assertNoTitle}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoTitle}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoTitle (\$ {\em title}, \/  \$ {\em message}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa019d62a843ffe740b9456f316838924}
+Pass if the page title is not the given string.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$title}]The string the title should not be. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a058c82a867e22a61b68891a009294e7b}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertNoUniqueText@{assertNoUniqueText}}
+\index{assertNoUniqueText@{assertNoUniqueText}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertNoUniqueText}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertNoUniqueText (\$ {\em text}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a058c82a867e22a61b68891a009294e7b}
+Pass if the text is found MORE THAN ONCE on the text version of the page.
+
+The text version is the equivalent of what a user would see when viewing through a web browser. In other words the HTML has been filtered out of the contents.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$text}]Plain text to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a5838fb78298156ab4de6a2ff5cdc4f8b}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertPattern@{assertPattern}}
+\index{assertPattern@{assertPattern}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertPattern}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertPattern (\$ {\em pattern}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a5838fb78298156ab4de6a2ff5cdc4f8b}
+Will trigger a pass if the Perl regex pattern is found in the raw content.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$pattern}]Perl regex to look for including the regex delimiters. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ae15c8d3302ff90dc47d2fd7686ee4005}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertRaw@{assertRaw}}
+\index{assertRaw@{assertRaw}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertRaw}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertRaw (\$ {\em raw}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ae15c8d3302ff90dc47d2fd7686ee4005}
+Pass if the raw text IS found on the loaded page, fail otherwise. Raw text refers to the raw HTML that the page generated.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$raw}]Raw (HTML) string to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_af414857cce5491ca01a2f7ea9d2d60bf}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertResponse@{assertResponse}}
+\index{assertResponse@{assertResponse}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertResponse}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertResponse (\$ {\em code}, \/  \$ {\em message} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_af414857cce5491ca01a2f7ea9d2d60bf}
+Assert the page responds with the specified response code.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$code}]Response code. For example 200 is a successful page request. For a list of all codes see \href{http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html.}{\tt http://www.w3.org/Protocols/rfc2616/rfc2616-\/sec10.html.} \item[{\em \$message}]Message to display. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion result. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad721f3f08df154f1ccaf7b8ab0d2d9d0}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertText@{assertText}}
+\index{assertText@{assertText}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertText}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertText (\$ {\em text}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad721f3f08df154f1ccaf7b8ab0d2d9d0}
+Pass if the text IS found on the text version of the page. The text version is the equivalent of what a user would see when viewing through a web browser. In other words the HTML has been filtered out of the contents.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$text}]Plain text to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a870c322ff86add51471f4b39905111d7}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertTextHelper@{assertTextHelper}}
+\index{assertTextHelper@{assertTextHelper}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertTextHelper}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertTextHelper (\$ {\em text}, \/  \$ {\em message}, \/  \$ {\em group}, \/  \$ {\em not\_\-exists})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a870c322ff86add51471f4b39905111d7}
+Helper for assertText and assertNoText.
+
+It is not recommended to call this function directly.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$text}]Plain text to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \item[{\em \$not\_\-exists}]TRUE if this text should not exist, FALSE if it should. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ae51a8bfe2db3ab2e5a7373738f843624}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertTitle@{assertTitle}}
+\index{assertTitle@{assertTitle}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertTitle}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertTitle (\$ {\em title}, \/  \$ {\em message}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ae51a8bfe2db3ab2e5a7373738f843624}
+Pass if the page title is the given string.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$title}]The string the title should be. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aa8d65b2749e7d0430b07bd77f7f4877b}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertUniqueText@{assertUniqueText}}
+\index{assertUniqueText@{assertUniqueText}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertUniqueText}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertUniqueText (\$ {\em text}, \/  \$ {\em message} = {\ttfamily ''}, \/  \$ {\em group} = {\ttfamily 'Other'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa8d65b2749e7d0430b07bd77f7f4877b}
+Pass if the text is found ONLY ONCE on the text version of the page.
+
+The text version is the equivalent of what a user would see when viewing through a web browser. In other words the HTML has been filtered out of the contents.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$text}]Plain text to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to, defaults to 'Other'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_aa853442f9c99a2205c56db88065b58b5}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!assertUniqueTextHelper@{assertUniqueTextHelper}}
+\index{assertUniqueTextHelper@{assertUniqueTextHelper}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{assertUniqueTextHelper}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::assertUniqueTextHelper (\$ {\em text}, \/  \$ {\em message}, \/  \$ {\em group}, \/  \$ {\em be\_\-unique})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa853442f9c99a2205c56db88065b58b5}
+Helper for assertUniqueText and assertNoUniqueText.
+
+It is not recommended to call this function directly.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$text}]Plain text to look for. \item[{\em \$message}]Message to display. \item[{\em \$group}]The group this message belongs to. \item[{\em \$be\_\-unique}]TRUE if this text should be found only once, FALSE if it should be found more than once. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE on pass, FALSE on fail. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a639bf5d4e0892c7d3659c224a609183c}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!checkForMetaRefresh@{checkForMetaRefresh}}
+\index{checkForMetaRefresh@{checkForMetaRefresh}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{checkForMetaRefresh}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::checkForMetaRefresh ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a639bf5d4e0892c7d3659c224a609183c}
+Check for meta refresh tag and if found call \hyperlink{class_drupal_web_test_case_ae282e9e10195fb8dad8a49d1b35e31c9}{drupalGet()} recursively. This function looks for the http-\/equiv attribute to be set to \char`\"{}Refresh\char`\"{} and is case-\/sensitive.
+
+\begin{DoxyReturn}{Returns}
+Either the new page content or FALSE. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a12e53962cb95e9f6eb86efcc09b08615}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!checkPermissions@{checkPermissions}}
+\index{checkPermissions@{checkPermissions}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{checkPermissions}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::checkPermissions (array \$ {\em permissions}, \/  \$ {\em reset} = {\ttfamily FALSE})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a12e53962cb95e9f6eb86efcc09b08615}
+Check to make sure that the array of permissions are valid.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$permissions}]Permissions to check. \item[{\em \$reset}]Reset cached available permissions. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE or FALSE depending on whether the permissions are valid. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a716c6eef22f216695376ea5b531ce9a1}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!clickLink@{clickLink}}
+\index{clickLink@{clickLink}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{clickLink}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::clickLink (\$ {\em label}, \/  \$ {\em index} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a716c6eef22f216695376ea5b531ce9a1}
+Follows a link by name.
+
+Will click the first link found with this link text by default, or a later one if an index is given. Match is case insensitive with normalized space. The label is translated label. There is an assert for successful click.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$label}]Text between the anchor tags. \item[{\em \$index}]Link position counting from zero. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Page on success, or FALSE on failure. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_afec52d7a3b6e492c3230dcc2b22bd7bb}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!constructFieldXpath@{constructFieldXpath}}
+\index{constructFieldXpath@{constructFieldXpath}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{constructFieldXpath}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::constructFieldXpath (\$ {\em attribute}, \/  \$ {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_afec52d7a3b6e492c3230dcc2b22bd7bb}
+Helper function: construct an XPath for the given set of attributes and value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$attribute}]Field attributes. \item[{\em \$value}]Value of field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+XPath for specified values. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a0b3eb01ee1312ea28f78fc1a293835be}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!curlClose@{curlClose}}
+\index{curlClose@{curlClose}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{curlClose}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::curlClose ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a0b3eb01ee1312ea28f78fc1a293835be}
+Close the cURL handler and unset the handler. \hypertarget{class_drupal_web_test_case_aa559e47572bc90f0c8ccd1aef86fd95f}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!curlExec@{curlExec}}
+\index{curlExec@{curlExec}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{curlExec}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::curlExec (\$ {\em curl\_\-options})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa559e47572bc90f0c8ccd1aef86fd95f}
+Performs a cURL exec with the specified options after calling curlConnect().
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$curl\_\-options}]Custom cURL options. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Content returned from the exec. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a7993c14e1d81d759a6b3903764bb0e46}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!curlHeaderCallback@{curlHeaderCallback}}
+\index{curlHeaderCallback@{curlHeaderCallback}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{curlHeaderCallback}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::curlHeaderCallback (\$ {\em curlHandler}, \/  \$ {\em header})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a7993c14e1d81d759a6b3903764bb0e46}
+Reads headers and registers errors received from the tested site.
+
+\begin{DoxySeeAlso}{See also}
+\_\-drupal\_\-log\_\-error().
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$curlHandler}]The cURL handler. \item[{\em \$header}]An header. \end{DoxyParams}
+\hypertarget{class_drupal_web_test_case_a8c51d47f5b89aad9f5e7fc4fa001bf05}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!curlInitialize@{curlInitialize}}
+\index{curlInitialize@{curlInitialize}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{curlInitialize}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::curlInitialize ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a8c51d47f5b89aad9f5e7fc4fa001bf05}
+Initializes the cURL connection.
+
+If the simpletest\_\-httpauth\_\-credentials variable is set, this function will add HTTP authentication headers. This is necessary for testing sites that are protected by login credentials from public access. See the description of \$curl\_\-options for other options. \hypertarget{class_drupal_web_test_case_a7bdda4e6c7063f5dbcfecb1c70a03432}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalCompareFiles@{drupalCompareFiles}}
+\index{drupalCompareFiles@{drupalCompareFiles}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalCompareFiles}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalCompareFiles (\$ {\em file1}, \/  \$ {\em file2})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a7bdda4e6c7063f5dbcfecb1c70a03432}
+Compare two files based on size and file name. \hypertarget{class_drupal_web_test_case_a880b99e54830cd0a56e2f37b65ec337f}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalCreateContentType@{drupalCreateContentType}}
+\index{drupalCreateContentType@{drupalCreateContentType}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalCreateContentType}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalCreateContentType (\$ {\em settings} = {\ttfamily array()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a880b99e54830cd0a56e2f37b65ec337f}
+Creates a custom content type based on default settings.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$settings}]An array of settings to change from the defaults. Example: 'type' =$>$ 'foo'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Created content type. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a73daf1ecd169e59a2acc47d57f06572f}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalCreateNode@{drupalCreateNode}}
+\index{drupalCreateNode@{drupalCreateNode}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalCreateNode}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalCreateNode (\$ {\em settings} = {\ttfamily array()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a73daf1ecd169e59a2acc47d57f06572f}
+Creates a node based on default settings.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$settings}]An associative array of settings to change from the defaults, keys are node properties, for example 'title' =$>$ 'Hello, world!'. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Created node object. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ac704af37ef0e0d824af1407265bf750d}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalCreateRole@{drupalCreateRole}}
+\index{drupalCreateRole@{drupalCreateRole}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalCreateRole}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalCreateRole (array \$ {\em permissions}, \/  \$ {\em name} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ac704af37ef0e0d824af1407265bf750d}
+Internal helper function; Create a role with specified permissions.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$permissions}]Array of permission names to assign to role. \item[{\em \$name}](optional) String for the name of the role. Defaults to a random string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Role ID of newly created role, or FALSE if role creation failed. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad39222df2e8243c419d465bbe48b0713}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalCreateUser@{drupalCreateUser}}
+\index{drupalCreateUser@{drupalCreateUser}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalCreateUser}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalCreateUser (\$ {\em permissions} = {\ttfamily array('access~comments',~'access~content',~'post~comments',~'post~comments~without~approval')})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad39222df2e8243c419d465bbe48b0713}
+Create a user with a given set of permissions. The permissions correspond to the names given on the privileges page.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$permissions}]Array of permission names to assign to user. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A fully loaded user object with pass\_\-raw property, or FALSE if account creation fails. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ae282e9e10195fb8dad8a49d1b35e31c9}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGet@{drupalGet}}
+\index{drupalGet@{drupalGet}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGet}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGet (\$ {\em path}, \/  array \$ {\em options} = {\ttfamily array()}, \/  array \$ {\em headers} = {\ttfamily array()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ae282e9e10195fb8dad8a49d1b35e31c9}
+Retrieves a Drupal path or an absolute path.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$path}]Drupal path or URL to load into internal browser \item[{\em \$options}]Options to be forwarded to url(). \item[{\em \$headers}]An array containing additional HTTP request headers, each formatted as \char`\"{}name: value\char`\"{}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The retrieved HTML string, also available as \$this-\/$>$\hyperlink{class_drupal_web_test_case_a65cc4334da96452d127a9fb50636e7bb}{drupalGetContent()} 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a65cc4334da96452d127a9fb50636e7bb}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetContent@{drupalGetContent}}
+\index{drupalGetContent@{drupalGetContent}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetContent}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetContent ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a65cc4334da96452d127a9fb50636e7bb}
+Gets the current raw HTML of requested page. \hypertarget{class_drupal_web_test_case_a2a5d661d1f61cf9ac2c8bb5969d5d373}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetHeader@{drupalGetHeader}}
+\index{drupalGetHeader@{drupalGetHeader}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetHeader}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetHeader (\$ {\em name}, \/  \$ {\em all\_\-requests} = {\ttfamily FALSE})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a2a5d661d1f61cf9ac2c8bb5969d5d373}
+Gets the value of an HTTP response header. If multiple requests were required to retrieve the page, only the headers from the last request will be checked by default. However, if TRUE is passed as the second argument, all requests will be processed from last to first until the header is found.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$name}]The name of the header to retrieve. Names are case-\/insensitive (see RFC 2616 section 4.2). \item[{\em \$all\_\-requests}]Boolean value specifying whether to check all requests if the header is not found in the last request. Defaults to FALSE. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The HTTP header value or FALSE if not found. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a9bbd6c61b69af17eeb79d59b1632a691}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetHeaders@{drupalGetHeaders}}
+\index{drupalGetHeaders@{drupalGetHeaders}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetHeaders}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetHeaders (\$ {\em all\_\-requests} = {\ttfamily FALSE})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a9bbd6c61b69af17eeb79d59b1632a691}
+Gets the HTTP response headers of the requested page. Normally we are only interested in the headers returned by the last request. However, if a page is redirected or HTTP authentication is in use, multiple requests will be required to retrieve the page. Headers from all requests may be requested by passing TRUE to this function.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$all\_\-requests}]Boolean value specifying whether to return headers from all requests instead of just the last request. Defaults to FALSE. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A name/value array if headers from only the last request are requested. If headers from all requests are requested, an array of name/value arrays, one for each request.
+\end{DoxyReturn}
+The pseudonym \char`\"{}:status\char`\"{} is used for the HTTP status line.
+
+Values for duplicate headers are stored as a single comma-\/separated list. \hypertarget{class_drupal_web_test_case_af2c147ab7789a251a27aa88a70282432}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetMails@{drupalGetMails}}
+\index{drupalGetMails@{drupalGetMails}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetMails}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetMails (\$ {\em filter} = {\ttfamily array()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_af2c147ab7789a251a27aa88a70282432}
+Gets an array containing all e-\/mails sent during this test case.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$filter}]An array containing key/value pairs used to filter the e-\/mails that are returned. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array containing e-\/mail messages captured during the current test. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ae3312c84795861f1bb35c226ef700903}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetNodeByTitle@{drupalGetNodeByTitle}}
+\index{drupalGetNodeByTitle@{drupalGetNodeByTitle}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetNodeByTitle}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetNodeByTitle (\$ {\em title})}}
+\label{class_drupal_web_test_case_ae3312c84795861f1bb35c226ef700903}
+Get a node from the database based on its title.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em title}]A node title, usually generated by \$this-\/$>$\hyperlink{class_drupal_test_case_ab1137ec76434cdd38ec267977ba153d5}{randomName()}.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A node object matching \$title. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad1439acbfb7b5cd34e851d49106ba92f}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetTestFiles@{drupalGetTestFiles}}
+\index{drupalGetTestFiles@{drupalGetTestFiles}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetTestFiles}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetTestFiles (\$ {\em type}, \/  \$ {\em size} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad1439acbfb7b5cd34e851d49106ba92f}
+Get a list files that can be used in tests.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$type}]File type, possible values: 'binary', 'html', 'image', 'javascript', 'php', 'sql', 'text'. \item[{\em \$size}]File size in bytes to match. Please check the tests/files folder. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of files that match filter. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a737d7788ee07da4f0184b6d489694070}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalGetToken@{drupalGetToken}}
+\index{drupalGetToken@{drupalGetToken}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalGetToken}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalGetToken (\$ {\em value} = {\ttfamily ''})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a737d7788ee07da4f0184b6d489694070}
+Generate a token for the currently logged in user. \hypertarget{class_drupal_web_test_case_adfed12ec9ae7e71a0de659894d5b171d}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalHead@{drupalHead}}
+\index{drupalHead@{drupalHead}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalHead}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalHead (\$ {\em path}, \/  array \$ {\em options} = {\ttfamily array()}, \/  array \$ {\em headers} = {\ttfamily array()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_adfed12ec9ae7e71a0de659894d5b171d}
+Retrieves only the headers for a Drupal path or an absolute path.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$path}]Drupal path or URL to load into internal browser \item[{\em \$options}]Options to be forwarded to url(). \item[{\em \$headers}]An array containing additional HTTP request headers, each formatted as \char`\"{}name: value\char`\"{}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The retrieved headers, also available as \$this-\/$>$\hyperlink{class_drupal_web_test_case_a65cc4334da96452d127a9fb50636e7bb}{drupalGetContent()} 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_adb24a311afdca9c565f3556fafb8044f}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalLogin@{drupalLogin}}
+\index{drupalLogin@{drupalLogin}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalLogin}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalLogin (stdClass \$ {\em user})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_adb24a311afdca9c565f3556fafb8044f}
+Log in a user with the internal browser.
+
+If a user is already logged in, then the current user is logged out before logging in the specified user.
+
+Please note that neither the global \$user nor the passed in user object is populated with data of the logged in user. If you need full access to the user object after logging in, it must be updated manually. If you also need access to the plain-\/text password of the user (set by \hyperlink{class_drupal_web_test_case_ad39222df2e8243c419d465bbe48b0713}{drupalCreateUser()}), e.g. to login the same user again, then it must be re-\/assigned manually. For example: 
+\begin{DoxyCode}
+   // Create a user.
+   $account = $this->drupalCreateUser(array());
+   $this->drupalLogin($account);
+   // Load real user object.
+   $pass_raw = $account->pass_raw;
+   $account = user_load($account->uid);
+   $account->pass_raw = $pass_raw;
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$user}]User object representing the user to login.\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_drupal_web_test_case_ad39222df2e8243c419d465bbe48b0713}{drupalCreateUser()} 
+\end{DoxySeeAlso}
+\hypertarget{class_drupal_web_test_case_aa773e6bf6ff8d0085dc60fb6d9ba888e}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalPost@{drupalPost}}
+\index{drupalPost@{drupalPost}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalPost}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalPost (\$ {\em path}, \/  \$ {\em edit}, \/  \$ {\em submit}, \/  array \$ {\em options} = {\ttfamily array()}, \/  array \$ {\em headers} = {\ttfamily array()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_aa773e6bf6ff8d0085dc60fb6d9ba888e}
+Execute a POST request on a Drupal page. It will be done as usual POST request with \hyperlink{class_simple_browser}{SimpleBrowser}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$path}]Location of the post form. Either a Drupal path or an absolute path or NULL to post to the current page. For multi-\/stage forms you can set the path to NULL and have it post to the last received page. Example:\end{DoxyParams}
+// First step in form. \$edit = array(...); \$this-\/$>$drupalPost('some\_\-url', \$edit, t('Save'));
+
+// Second step in form. \$edit = array(...); \$this-\/$>$drupalPost(NULL, \$edit, t('Save')); 
+\begin{DoxyParams}{Parameters}
+\item[{\em \$edit}]Field data in an associative array. Changes the current input fields (where possible) to the values indicated. A checkbox can be set to TRUE to be checked and FALSE to be unchecked. Note that when a form contains file upload fields, other fields cannot start with the '@' character.\end{DoxyParams}
+Multiple select fields can be set using name\mbox{[}\mbox{]} and setting each of the possible values. Example: \$edit = array(); \$edit\mbox{[}'name\mbox{[}\mbox{]}'\mbox{]} = array('value1', 'value2'); 
+\begin{DoxyParams}{Parameters}
+\item[{\em \$submit}]Value of the submit button. \item[{\em \$options}]Options to be forwarded to url(). \item[{\em \$headers}]An array containing additional HTTP request headers, each formatted as \char`\"{}name: value\char`\"{}. \end{DoxyParams}
+\hypertarget{class_drupal_web_test_case_a75c4e29bdb78951d61993b13985bad1c}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!drupalSetContent@{drupalSetContent}}
+\index{drupalSetContent@{drupalSetContent}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{drupalSetContent}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::drupalSetContent (\$ {\em content}, \/  \$ {\em url} = {\ttfamily 'internal:'})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a75c4e29bdb78951d61993b13985bad1c}
+Sets the raw HTML content. This can be useful when a page has been fetched outside of the internal browser and assertions need to be made on the returned page.
+
+A good example would be when testing drupal\_\-http\_\-request(). After fetching the page the content can be set and page elements can be checked to ensure that the function worked properly. \hypertarget{class_drupal_web_test_case_ab170c2353296a22d88f4c7da58418d57}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!getAbsoluteUrl@{getAbsoluteUrl}}
+\index{getAbsoluteUrl@{getAbsoluteUrl}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{getAbsoluteUrl}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::getAbsoluteUrl (\$ {\em path})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ab170c2353296a22d88f4c7da58418d57}
+Takes a path and returns an absolute path.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$path}]The path, can be a Drupal path or a site-\/relative path. It might have a query, too. Can even be an absolute path which is just passed through. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An absolute path. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a242a13b4aaf558f5b4030c0ad2b3789c}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!getAllOptions@{getAllOptions}}
+\index{getAllOptions@{getAllOptions}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{getAllOptions}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::getAllOptions (SimpleXMLElement \$ {\em element})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a242a13b4aaf558f5b4030c0ad2b3789c}
+Get all option elements, including nested options, in a select.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$element}]The element for which to get the options. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option elements in select. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a4f24b7eddfb7d495f4ad8592f0b24929}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!getSelectedItem@{getSelectedItem}}
+\index{getSelectedItem@{getSelectedItem}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{getSelectedItem}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::getSelectedItem (SimpleXMLElement \$ {\em element})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a4f24b7eddfb7d495f4ad8592f0b24929}
+Get the selected value from a select field.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$element}]SimpleXMLElement select element. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected value or FALSE. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a71fa7ff2a1b0b76829605458e875c9a0}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!getUrl@{getUrl}}
+\index{getUrl@{getUrl}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{getUrl}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::getUrl ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a71fa7ff2a1b0b76829605458e875c9a0}
+Get the current url from the cURL handler.
+
+\begin{DoxyReturn}{Returns}
+The current url. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_af28fa56d6175e845d39c2db518544633}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!handleForm@{handleForm}}
+\index{handleForm@{handleForm}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{handleForm}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::handleForm (\&\$ {\em post}, \/  \&\$ {\em edit}, \/  \&\$ {\em upload}, \/  \$ {\em submit}, \/  \$ {\em form})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_af28fa56d6175e845d39c2db518544633}
+Handle form input related to \hyperlink{class_drupal_web_test_case_aa773e6bf6ff8d0085dc60fb6d9ba888e}{drupalPost()}. Ensure that the specified fields exist and attempt to create POST data in the correct manner for the particular field type.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$post}]Reference to array of post values. \item[{\em \$edit}]Reference to array of edit values to be checked against the form. \item[{\em \$submit}]Form submit button value. \item[{\em \$form}]Array of form elements. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Submit value matches a valid submit input in the form. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_a19289cdf27c85cad8e10960769d1e28b}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!parse@{parse}}
+\index{parse@{parse}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::parse ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a19289cdf27c85cad8e10960769d1e28b}
+Parse content returned from curlExec using DOM and SimpleXML.
+
+\begin{DoxyReturn}{Returns}
+A SimpleXMLElement or FALSE on failure. 
+\end{DoxyReturn}
+\hypertarget{class_drupal_web_test_case_ad82b8c5cdc60fb19c9550ab7ba3fd017}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!refreshVariables@{refreshVariables}}
+\index{refreshVariables@{refreshVariables}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{refreshVariables}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::refreshVariables ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_ad82b8c5cdc60fb19c9550ab7ba3fd017}
+This method is called by \hyperlink{class_drupal_web_test_case_a110ecf5deb57ee6a908617360c1f6ec4}{DrupalWebTestCase::setUp}, and preloads the registry from the testing site to cut down on the time it takes to setup a clean environment for the current test run. Refresh the in-\/memory set of variables. Useful after a page request is made that changes a variable in a different thread.
+
+In other words calling a settings page with \$this-\/$>$\hyperlink{class_drupal_web_test_case_aa773e6bf6ff8d0085dc60fb6d9ba888e}{drupalPost()} with a changed value would update a variable to reflect that change, but in the thread that made the call (thread running the test) the changed variable would not be picked up.
+
+This method clears the variables cache and loads a fresh copy from the database to ensure that the most up-\/to-\/date set of variables is loaded. \hypertarget{class_drupal_web_test_case_a110ecf5deb57ee6a908617360c1f6ec4}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!setUp@{setUp}}
+\index{setUp@{setUp}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{setUp}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::setUp ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a110ecf5deb57ee6a908617360c1f6ec4}
+Generates a random database prefix, runs the install scripts on the prefixed database and enable the specified modules. After installation many caches are flushed and the internal browser is setup so that the page requests will run on the new prefix. A temporary files directory is created with the same name as the database prefix.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ...}]List of modules to enable for the duration of the test. \end{DoxyParams}
+\hypertarget{class_drupal_web_test_case_a6c0dba3c89c4aab3fa2576857c6f2be1}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!tearDown@{tearDown}}
+\index{tearDown@{tearDown}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{tearDown}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::tearDown ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a6c0dba3c89c4aab3fa2576857c6f2be1}
+Delete created files and temporary files directory, delete the tables created by \hyperlink{class_drupal_web_test_case_a110ecf5deb57ee6a908617360c1f6ec4}{setUp()}, and reset the database prefix. \hypertarget{class_drupal_web_test_case_a46e4ad5abf681eff423f6b6de5d9f361}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!verbose@{verbose}}
+\index{verbose@{verbose}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::verbose (\$ {\em message})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a46e4ad5abf681eff423f6b6de5d9f361}
+Log verbose message in a text file.
+
+The a link to the vebose message will be placed in the test results via as a passing assertion with the text '\mbox{[}verbose message\mbox{]}'.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$message}]The verbose message to be stored. \end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{drupal__web__test__case_8php_ac8ef212d48360d65d8a3697e709565d7}{simpletest\_\-verbose()} 
+\end{DoxySeeAlso}
+\hypertarget{class_drupal_web_test_case_a6442bac68174cd9c13277515573728e9}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!xpath@{xpath}}
+\index{xpath@{xpath}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{xpath}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::xpath (\$ {\em xpath})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a6442bac68174cd9c13277515573728e9}
+Perform an xpath search on the contents of the internal browser. The search is relative to the root element (HTML tag normally) of the page.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$xpath}]The xpath string to use in the search. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value of the xpath search. For details on the xpath string format and return values see the SimpleXML documentation, \href{http://us.php.net/manual/function.simplexml-element-xpath.php.}{\tt http://us.php.net/manual/function.simplexml-\/element-\/xpath.php.} 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_drupal_web_test_case_a8e4e1c5a9b63d403d10ad2f6a2f06aaa}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!\$additionalCurlOptions@{\$additionalCurlOptions}}
+\index{\$additionalCurlOptions@{\$additionalCurlOptions}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{\$additionalCurlOptions}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::\$additionalCurlOptions = array()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a8e4e1c5a9b63d403d10ad2f6a2f06aaa}
+Additional cURL options.
+
+\hyperlink{class_drupal_web_test_case}{DrupalWebTestCase} itself never sets this but always obeys what is set. \hypertarget{class_drupal_web_test_case_abee07354ff94d9b036c7b2e1b1855176}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!\$cookieFile@{\$cookieFile}}
+\index{\$cookieFile@{\$cookieFile}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{\$cookieFile}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::\$cookieFile = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_abee07354ff94d9b036c7b2e1b1855176}
+The current cookie file used by cURL.
+
+We do not reuse the cookies in further runs, so we do not need a file but we still need cookie handling, so we set the jar to NULL. \hypertarget{class_drupal_web_test_case_a1d8ed55611dfba216fc9a7eaaca59b8d}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!\$httpauth\_\-credentials@{\$httpauth\_\-credentials}}
+\index{\$httpauth\_\-credentials@{\$httpauth\_\-credentials}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{\$httpauth\_\-credentials}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::\$httpauth\_\-credentials = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a1d8ed55611dfba216fc9a7eaaca59b8d}
+HTTP authentication credentials ($<$username$>$:$<$password$>$). \hypertarget{class_drupal_web_test_case_a2f8ec9f9c31df56f5502f473e7b78e31}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!\$session\_\-id@{\$session\_\-id}}
+\index{\$session\_\-id@{\$session\_\-id}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{\$session\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::\$session\_\-id = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_a2f8ec9f9c31df56f5502f473e7b78e31}
+The current session ID, if available. \hypertarget{class_drupal_web_test_case_acb07ddaedaef0c5d08610666ec74cb45}{
+\index{DrupalWebTestCase@{DrupalWebTestCase}!\$session\_\-name@{\$session\_\-name}}
+\index{\$session\_\-name@{\$session\_\-name}!DrupalWebTestCase@{DrupalWebTestCase}}
+\subsubsection[{\$session\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}DrupalWebTestCase::\$session\_\-name = NULL\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_drupal_web_test_case_acb07ddaedaef0c5d08610666ec74cb45}
+The current session name, if available. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/\hyperlink{drupal__web__test__case_8php}{drupal\_\-web\_\-test\_\-case.php}\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+\hypertarget{simpletest_8mail_8inc}{
+\section{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest.mail.inc File Reference}
+\label{simpletest_8mail_8inc}\index{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest.mail.inc@{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest.mail.inc}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{simpletest_8mail_8inc_a74e0adfe17e4cd75eff256b8499d5a49}{drupal\_\-mail\_\-wrapper} (array \$message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+smtp\_\-library implementation for simpletest. 
+
+\subsection{Function Documentation}
+\hypertarget{simpletest_8mail_8inc_a74e0adfe17e4cd75eff256b8499d5a49}{
+\index{simpletest.mail.inc@{simpletest.mail.inc}!drupal\_\-mail\_\-wrapper@{drupal\_\-mail\_\-wrapper}}
+\index{drupal\_\-mail\_\-wrapper@{drupal\_\-mail\_\-wrapper}!simpletest.mail.inc@{simpletest.mail.inc}}
+\subsubsection[{drupal\_\-mail\_\-wrapper}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-mail\_\-wrapper (array \$ {\em message})}}
+\label{simpletest_8mail_8inc_a74e0adfe17e4cd75eff256b8499d5a49}
+Capture e-\/mail message during testing.
+
+Code copied from TestingMailSystem in mail.sending.inc (Drupal 7). Placed in this file to ensure not loaded until in testing mode, to ensure no conflicts with other implementations like devel.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$message}]An e-\/mail message. \end{DoxyParams}

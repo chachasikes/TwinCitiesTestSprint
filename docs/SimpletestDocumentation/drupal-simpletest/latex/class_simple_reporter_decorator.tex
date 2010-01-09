@@ -1,0 +1,246 @@
+\hypertarget{class_simple_reporter_decorator}{
+\section{SimpleReporterDecorator Class Reference}
+\label{class_simple_reporter_decorator}\index{SimpleReporterDecorator@{SimpleReporterDecorator}}
+}
+Inheritance diagram for SimpleReporterDecorator::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_simple_reporter_decorator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_reporter_decorator_af6326eea5974fd37bfe2dd5e3a58fcf5}{SimpleReporterDecorator} (\&\$reporter)
+\item 
+\hyperlink{class_simple_reporter_decorator_a8415a96af49c4f0a544319d6f81b85a4}{makeDry} (\$is\_\-dry=true)
+\item 
+\hyperlink{class_simple_reporter_decorator_a5270362707f6df0d37eb9f4b9d4ec339}{getStatus} ()
+\item 
+\hyperlink{class_simple_reporter_decorator_a571852c647ef03d0486353aed21d79f9}{shouldInvoke} (\$test\_\-case\_\-name, \$method)
+\item 
+\& \hyperlink{class_simple_reporter_decorator_a9c002b61072edecc11603dfb41bb00a5}{createInvoker} (\&\$invoker)
+\item 
+\hyperlink{class_simple_reporter_decorator_ae6ed25f3a3cda7aab6a71ddc77b00695}{getDumper} ()
+\item 
+\hyperlink{class_simple_reporter_decorator_a2e64b5bc09764a866715f80c3f2aeee7}{paintGroupStart} (\$test\_\-name, \$size)
+\item 
+\hyperlink{class_simple_reporter_decorator_a836e0cd11187140b1646bcd1fee494d1}{paintGroupEnd} (\$test\_\-name)
+\item 
+\hyperlink{class_simple_reporter_decorator_aa6a8e6c378555a2b30339a3846c98144}{paintCaseStart} (\$test\_\-name)
+\item 
+\hyperlink{class_simple_reporter_decorator_abf37b2557147287b9c3ca070736ee465}{paintCaseEnd} (\$test\_\-name)
+\item 
+\hyperlink{class_simple_reporter_decorator_a3877f093e787635206b8e73d626cae81}{paintMethodStart} (\$test\_\-name)
+\item 
+\hyperlink{class_simple_reporter_decorator_ae8bc09f969225a04c13cf735e72ab2cb}{paintMethodEnd} (\$test\_\-name)
+\item 
+\hyperlink{class_simple_reporter_decorator_a32a51a21a9b469e284a16b7b98430432}{paintPass} (\$message)
+\item 
+\hyperlink{class_simple_reporter_decorator_a4dd462fa2d69921c1c4994e31df3be21}{paintFail} (\$message)
+\item 
+\hyperlink{class_simple_reporter_decorator_ab13238fe02b14c8c115d74c83d69775f}{paintError} (\$message)
+\item 
+\hyperlink{class_simple_reporter_decorator_ae7062bed7d3fbfdce2f75850d6e86674}{paintException} (\$exception)
+\item 
+\hyperlink{class_simple_reporter_decorator_a40539ad16a5ce944fe4d2ea479bca897}{paintSkip} (\$message)
+\item 
+\hyperlink{class_simple_reporter_decorator_a42f3412ccd3f983be7b5a6bdb7cff7c1}{paintMessage} (\$message)
+\item 
+\hyperlink{class_simple_reporter_decorator_a15ee8be1412a746135526e83b2ba307b}{paintFormattedMessage} (\$message)
+\item 
+\hyperlink{class_simple_reporter_decorator_a94cd17c8d29e7a30fe8a37108d707fbd}{paintSignal} (\$type, \&\$payload)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_reporter_decorator_a5beb9f23aec954a06061835c24858768}{
+{\bfseries \$\_\-reporter}}
+\label{class_simple_reporter_decorator_a5beb9f23aec954a06061835c24858768}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_simple_reporter_decorator_a9c002b61072edecc11603dfb41bb00a5}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!createInvoker@{createInvoker}}
+\index{createInvoker@{createInvoker}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{createInvoker}]{\setlength{\rightskip}{0pt plus 5cm}\& SimpleReporterDecorator::createInvoker (\&\$ {\em invoker})}}
+\label{class_simple_reporter_decorator_a9c002b61072edecc11603dfb41bb00a5}
+Can wrap the invoker in preperation for running a test. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \hyperlink{class_simple_invoker}{SimpleInvoker}}]\$invoker Individual test runner. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_simple_invoker}{SimpleInvoker} Wrapped test runner.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_reporter_decorator_ae6ed25f3a3cda7aab6a71ddc77b00695}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!getDumper@{getDumper}}
+\index{getDumper@{getDumper}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{getDumper}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::getDumper ()}}
+\label{class_simple_reporter_decorator_ae6ed25f3a3cda7aab6a71ddc77b00695}
+Gets the formatter for variables and other small generic data items. \begin{DoxyReturn}{Returns}
+\hyperlink{class_simple_dumper}{SimpleDumper} Formatter.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_reporter_decorator_a5270362707f6df0d37eb9f4b9d4ec339}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{getStatus}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::getStatus ()}}
+\label{class_simple_reporter_decorator_a5270362707f6df0d37eb9f4b9d4ec339}
+Accessor for current status. Will be false if there have been any failures or exceptions. Used for command line tools. \begin{DoxyReturn}{Returns}
+boolean True if no failures.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_reporter_decorator_a8415a96af49c4f0a544319d6f81b85a4}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!makeDry@{makeDry}}
+\index{makeDry@{makeDry}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{makeDry}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::makeDry (\$ {\em is\_\-dry} = {\ttfamily true})}}
+\label{class_simple_reporter_decorator_a8415a96af49c4f0a544319d6f81b85a4}
+Signals that the next evaluation will be a dry run. That is, the structure events will be recorded, but no tests will be run. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boolean}]\$is\_\-dry Dry run if true.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_abf37b2557147287b9c3ca070736ee465}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintCaseEnd@{paintCaseEnd}}
+\index{paintCaseEnd@{paintCaseEnd}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintCaseEnd}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintCaseEnd (\$ {\em test\_\-name})}}
+\label{class_simple_reporter_decorator_abf37b2557147287b9c3ca070736ee465}
+Paints the end of a test case. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-name Name of test or other label.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_aa6a8e6c378555a2b30339a3846c98144}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintCaseStart@{paintCaseStart}}
+\index{paintCaseStart@{paintCaseStart}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintCaseStart}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintCaseStart (\$ {\em test\_\-name})}}
+\label{class_simple_reporter_decorator_aa6a8e6c378555a2b30339a3846c98144}
+Paints the start of a test case. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-name Name of test or other label.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_ab13238fe02b14c8c115d74c83d69775f}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintError@{paintError}}
+\index{paintError@{paintError}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintError}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintError (\$ {\em message})}}
+\label{class_simple_reporter_decorator_ab13238fe02b14c8c115d74c83d69775f}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$message Text of error formatted by the test case.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_ae7062bed7d3fbfdce2f75850d6e86674}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintException@{paintException}}
+\index{paintException@{paintException}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintException}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintException (\$ {\em exception})}}
+\label{class_simple_reporter_decorator_ae7062bed7d3fbfdce2f75850d6e86674}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em Exception}]\$exception Exception to show.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_a4dd462fa2d69921c1c4994e31df3be21}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintFail@{paintFail}}
+\index{paintFail@{paintFail}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintFail}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintFail (\$ {\em message})}}
+\label{class_simple_reporter_decorator_a4dd462fa2d69921c1c4994e31df3be21}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$message Message is ignored.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_a15ee8be1412a746135526e83b2ba307b}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintFormattedMessage@{paintFormattedMessage}}
+\index{paintFormattedMessage@{paintFormattedMessage}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintFormattedMessage}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintFormattedMessage (\$ {\em message})}}
+\label{class_simple_reporter_decorator_a15ee8be1412a746135526e83b2ba307b}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$message Text to display.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_a836e0cd11187140b1646bcd1fee494d1}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintGroupEnd@{paintGroupEnd}}
+\index{paintGroupEnd@{paintGroupEnd}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintGroupEnd}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintGroupEnd (\$ {\em test\_\-name})}}
+\label{class_simple_reporter_decorator_a836e0cd11187140b1646bcd1fee494d1}
+Paints the end of a group test. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-name Name of test or other label.  public \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_selective_reporter_a3d49dee3f9831508049c46b3f8bc48e1}{SelectiveReporter}.\hypertarget{class_simple_reporter_decorator_a2e64b5bc09764a866715f80c3f2aeee7}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintGroupStart@{paintGroupStart}}
+\index{paintGroupStart@{paintGroupStart}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintGroupStart}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintGroupStart (\$ {\em test\_\-name}, \/  \$ {\em size})}}
+\label{class_simple_reporter_decorator_a2e64b5bc09764a866715f80c3f2aeee7}
+Paints the start of a group test. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-name Name of test or other label. \item[{\em integer}]\$size Number of test cases starting.  public \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_selective_reporter_af83e76607ce4fed137722eadc77549ff}{SelectiveReporter}.\hypertarget{class_simple_reporter_decorator_a42f3412ccd3f983be7b5a6bdb7cff7c1}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintMessage@{paintMessage}}
+\index{paintMessage@{paintMessage}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintMessage}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintMessage (\$ {\em message})}}
+\label{class_simple_reporter_decorator_a42f3412ccd3f983be7b5a6bdb7cff7c1}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$message Text to display.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_ae8bc09f969225a04c13cf735e72ab2cb}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintMethodEnd@{paintMethodEnd}}
+\index{paintMethodEnd@{paintMethodEnd}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintMethodEnd}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintMethodEnd (\$ {\em test\_\-name})}}
+\label{class_simple_reporter_decorator_ae8bc09f969225a04c13cf735e72ab2cb}
+Paints the end of a test method. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-name Name of test or other label.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_a3877f093e787635206b8e73d626cae81}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintMethodStart@{paintMethodStart}}
+\index{paintMethodStart@{paintMethodStart}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintMethodStart}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintMethodStart (\$ {\em test\_\-name})}}
+\label{class_simple_reporter_decorator_a3877f093e787635206b8e73d626cae81}
+Paints the start of a test method. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-name Name of test or other label.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_a32a51a21a9b469e284a16b7b98430432}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintPass@{paintPass}}
+\index{paintPass@{paintPass}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintPass}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintPass (\$ {\em message})}}
+\label{class_simple_reporter_decorator_a32a51a21a9b469e284a16b7b98430432}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$message Message is ignored.  public \end{DoxyParams}
+\hypertarget{class_simple_reporter_decorator_a94cd17c8d29e7a30fe8a37108d707fbd}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintSignal@{paintSignal}}
+\index{paintSignal@{paintSignal}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintSignal}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintSignal (\$ {\em type}, \/  \&\$ {\em payload})}}
+\label{class_simple_reporter_decorator_a94cd17c8d29e7a30fe8a37108d707fbd}
+Chains to the wrapped reporter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$type Event type as text. \item[{\em mixed}]\$payload Message or object. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Should return false if this type of signal should fail the test suite.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_reporter_decorator_a40539ad16a5ce944fe4d2ea479bca897}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!paintSkip@{paintSkip}}
+\index{paintSkip@{paintSkip}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{paintSkip}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::paintSkip (\$ {\em message})}}
+\label{class_simple_reporter_decorator_a40539ad16a5ce944fe4d2ea479bca897}
+Prints the message for skipping tests. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$message Text of skip condition.  public \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_no_skips_reporter_ab632d4c0baf0fc36a44c3ed6c3a3d1a4}{NoSkipsReporter}.\hypertarget{class_simple_reporter_decorator_a571852c647ef03d0486353aed21d79f9}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!shouldInvoke@{shouldInvoke}}
+\index{shouldInvoke@{shouldInvoke}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{shouldInvoke}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::shouldInvoke (\$ {\em test\_\-case\_\-name}, \/  \$ {\em method})}}
+\label{class_simple_reporter_decorator_a571852c647ef03d0486353aed21d79f9}
+The reporter has a veto on what should be run. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$test\_\-case\_\-name name of test case. \item[{\em string}]\$method Name of test method. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if test should be run.  public 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_selective_reporter_a33b86430bc37e8c5f35c246789a9a105}{SelectiveReporter}.\hypertarget{class_simple_reporter_decorator_af6326eea5974fd37bfe2dd5e3a58fcf5}{
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\index{SimpleReporterDecorator@{SimpleReporterDecorator}!SimpleReporterDecorator@{SimpleReporterDecorator}}
+\subsubsection[{SimpleReporterDecorator}]{\setlength{\rightskip}{0pt plus 5cm}SimpleReporterDecorator::SimpleReporterDecorator (\&\$ {\em reporter})}}
+\label{class_simple_reporter_decorator_af6326eea5974fd37bfe2dd5e3a58fcf5}
+Mediates between the reporter and the test case. 
+\begin{DoxyParams}{Parameters}
+\item[{\em \hyperlink{class_simple_scorer}{SimpleScorer}}]\$reporter Reporter to receive events. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest/scorer.php\end{DoxyCompactItemize}

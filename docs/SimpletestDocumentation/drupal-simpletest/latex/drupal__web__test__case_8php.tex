@@ -1,0 +1,46 @@
+\hypertarget{drupal__web__test__case_8php}{
+\section{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/drupal\_\-web\_\-test\_\-case.php File Reference}
+\label{drupal__web__test__case_8php}\index{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/drupal\_\-web\_\-test\_\-case.php@{/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/drupal\_\-web\_\-test\_\-case.php}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_drupal_test_case}{DrupalTestCase}
+\item 
+class \hyperlink{class_drupal_unit_test_case}{DrupalUnitTestCase}
+\item 
+class \hyperlink{class_drupal_web_test_case}{DrupalWebTestCase}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{drupal__web__test__case_8php_ac8ef212d48360d65d8a3697e709565d7}{simpletest\_\-verbose} (\$message, \$original\_\-file\_\-directory=NULL, \$test\_\-class=NULL)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide required modifications to Drupal 7 core \hyperlink{class_drupal_web_test_case}{DrupalWebTestCase} in order for it to function properly in Drupal 6.
+
+Copyright 2008-\/2009 by Jimmy Berry (\char`\"{}boombatower\char`\"{}, \href{http://drupal.org/user/214218}{\tt http://drupal.org/user/214218}) 
+
+\subsection{Function Documentation}
+\hypertarget{drupal__web__test__case_8php_ac8ef212d48360d65d8a3697e709565d7}{
+\index{drupal\_\-web\_\-test\_\-case.php@{drupal\_\-web\_\-test\_\-case.php}!simpletest\_\-verbose@{simpletest\_\-verbose}}
+\index{simpletest\_\-verbose@{simpletest\_\-verbose}!drupal_web_test_case.php@{drupal\_\-web\_\-test\_\-case.php}}
+\subsubsection[{simpletest\_\-verbose}]{\setlength{\rightskip}{0pt plus 5cm}simpletest\_\-verbose (\$ {\em message}, \/  \$ {\em original\_\-file\_\-directory} = {\ttfamily NULL}, \/  \$ {\em test\_\-class} = {\ttfamily NULL})}}
+\label{drupal__web__test__case_8php_ac8ef212d48360d65d8a3697e709565d7}
+Log verbose message in a text file.
+
+If verbose mode is enabled then page requests will be dumped to a file and presented on the test result screen. The messages will be placed in a file located in the simpletest directory in the original file system.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em \$message}]The verbose message to be stored. \item[{\em \$original\_\-file\_\-directory}]The original file directory, before it was changed for testing purposes. \item[{\em \$test\_\-class}]The active test case class. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the message to be placed in related assertion messages. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+DrupalTestCase-\/$>$originalFileDirectory 
+
+DrupalWebTestCase-\/$>$verbose() 
+\end{DoxySeeAlso}

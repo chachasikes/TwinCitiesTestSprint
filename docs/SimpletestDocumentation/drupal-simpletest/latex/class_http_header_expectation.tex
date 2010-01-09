@@ -1,0 +1,137 @@
+\hypertarget{class_http_header_expectation}{
+\section{HttpHeaderExpectation Class Reference}
+\label{class_http_header_expectation}\index{HttpHeaderExpectation@{HttpHeaderExpectation}}
+}
+Inheritance diagram for HttpHeaderExpectation::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_http_header_expectation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_http_header_expectation_aefc6e91171518d01a9b2dbc0a9885fcb}{HttpHeaderExpectation} (\$header, \$value=false, \$message= '\%s')
+\item 
+\hyperlink{class_http_header_expectation_ac77ecb228256b46964c46a7dfcbeb030}{\_\-getExpectation} ()
+\item 
+\hyperlink{class_http_header_expectation_a45f30ccc9cec011cd55f3bed48f45807}{\_\-normaliseHeader} (\$header)
+\item 
+\hyperlink{class_http_header_expectation_a22d6de67c863d5f596a90b64b4989637}{test} (\$compare)
+\item 
+\hyperlink{class_http_header_expectation_a8ddd193f67f36b80517dcd00c0c0a2c2}{\_\-findHeader} (\$compare)
+\item 
+\hyperlink{class_http_header_expectation_a088544f94d409d28df142ff0ca5dd146}{\_\-testHeaderLine} (\$line)
+\item 
+\hyperlink{class_http_header_expectation_a53fd1ae122651ea92db15820cf588329}{\_\-testHeaderValue} (\$value, \$expected)
+\item 
+\hyperlink{class_http_header_expectation_ac564586fb079247c33a04e6ead31f8cb}{testMessage} (\$compare)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_http_header_expectation_a6ad15ab8207ce800aa493d93271a8067}{
+{\bfseries \$\_\-expected\_\-header}}
+\label{class_http_header_expectation_a6ad15ab8207ce800aa493d93271a8067}
+
+\item 
+\hypertarget{class_http_header_expectation_aa4579d54215cb552c7a27327fbed2fd2}{
+{\bfseries \$\_\-expected\_\-value}}
+\label{class_http_header_expectation_aa4579d54215cb552c7a27327fbed2fd2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_http_header_expectation_a8ddd193f67f36b80517dcd00c0c0a2c2}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!\_\-findHeader@{\_\-findHeader}}
+\index{\_\-findHeader@{\_\-findHeader}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{\_\-findHeader}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::\_\-findHeader (\$ {\em compare})}}
+\label{class_http_header_expectation_a8ddd193f67f36b80517dcd00c0c0a2c2}
+Searches the incoming result. Will extract the matching line as text. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$compare Raw header block to search. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Matching header line.  protected 
+\end{DoxyReturn}
+\hypertarget{class_http_header_expectation_ac77ecb228256b46964c46a7dfcbeb030}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!\_\-getExpectation@{\_\-getExpectation}}
+\index{\_\-getExpectation@{\_\-getExpectation}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{\_\-getExpectation}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::\_\-getExpectation ()}}
+\label{class_http_header_expectation_ac77ecb228256b46964c46a7dfcbeb030}
+Accessor for aggregated object. \begin{DoxyReturn}{Returns}
+mixed Expectation set in constructor.  protected 
+\end{DoxyReturn}
+\hypertarget{class_http_header_expectation_a45f30ccc9cec011cd55f3bed48f45807}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!\_\-normaliseHeader@{\_\-normaliseHeader}}
+\index{\_\-normaliseHeader@{\_\-normaliseHeader}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{\_\-normaliseHeader}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::\_\-normaliseHeader (\$ {\em header})}}
+\label{class_http_header_expectation_a45f30ccc9cec011cd55f3bed48f45807}
+Removes whitespace at ends and case variations. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$header Name of header. \item[{\em string}]Trimmed and lowecased header name.  private \end{DoxyParams}
+\hypertarget{class_http_header_expectation_a088544f94d409d28df142ff0ca5dd146}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!\_\-testHeaderLine@{\_\-testHeaderLine}}
+\index{\_\-testHeaderLine@{\_\-testHeaderLine}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{\_\-testHeaderLine}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::\_\-testHeaderLine (\$ {\em line})}}
+\label{class_http_header_expectation_a088544f94d409d28df142ff0ca5dd146}
+Compares a single header line against the expectation. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$line A single line to compare. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if matched.  private 
+\end{DoxyReturn}
+\hypertarget{class_http_header_expectation_a53fd1ae122651ea92db15820cf588329}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!\_\-testHeaderValue@{\_\-testHeaderValue}}
+\index{\_\-testHeaderValue@{\_\-testHeaderValue}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{\_\-testHeaderValue}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::\_\-testHeaderValue (\$ {\em value}, \/  \$ {\em expected})}}
+\label{class_http_header_expectation_a53fd1ae122651ea92db15820cf588329}
+Tests the value part of the header. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$value Value to test. \item[{\em mixed}]\$expected Value to test against. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if matched.  protected 
+\end{DoxyReturn}
+\hypertarget{class_http_header_expectation_aefc6e91171518d01a9b2dbc0a9885fcb}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{HttpHeaderExpectation}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::HttpHeaderExpectation (\$ {\em header}, \/  \$ {\em value} = {\ttfamily false}, \/  \$ {\em message} = {\ttfamily '\%s'})}}
+\label{class_http_header_expectation_aefc6e91171518d01a9b2dbc0a9885fcb}
+Sets the field and value to compare against. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$header Case insenstive trimmed header name. \item[{\em mixed}]\$value Optional value to compare. If not given then any value will match. If an expectation object then that will be used instead. \item[{\em string}]\$message Optiona message override. Can use s as a placeholder for the original message. \end{DoxyParams}
+\hypertarget{class_http_header_expectation_a22d6de67c863d5f596a90b64b4989637}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!test@{test}}
+\index{test@{test}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::test (\$ {\em compare})}}
+\label{class_http_header_expectation_a22d6de67c863d5f596a90b64b4989637}
+Tests the expectation. True if it matches a string value or an array value in any order. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$compare Raw header block to search. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if header present.  public 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_simple_expectation_aa2b98f827e7487ebe12cedb9ad39d061}{SimpleExpectation}.
+
+Reimplemented in \hyperlink{class_no_http_header_expectation_a3eeb88677fbcc6f33f719aec17d93013}{NoHttpHeaderExpectation}.\hypertarget{class_http_header_expectation_ac564586fb079247c33a04e6ead31f8cb}{
+\index{HttpHeaderExpectation@{HttpHeaderExpectation}!testMessage@{testMessage}}
+\index{testMessage@{testMessage}!HttpHeaderExpectation@{HttpHeaderExpectation}}
+\subsubsection[{testMessage}]{\setlength{\rightskip}{0pt plus 5cm}HttpHeaderExpectation::testMessage (\$ {\em compare})}}
+\label{class_http_header_expectation_ac564586fb079247c33a04e6ead31f8cb}
+Returns a human readable test message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$compare Raw header block to search. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Description of success or failure.  public 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_simple_expectation_a15b69edf659c76f6543aa98d8d85b025}{SimpleExpectation}.
+
+Reimplemented in \hyperlink{class_no_http_header_expectation_a5fcd01471616efc71a8e28d2e8380ccb}{NoHttpHeaderExpectation}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest/web\_\-tester.php\end{DoxyCompactItemize}

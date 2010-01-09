@@ -1,0 +1,239 @@
+\hypertarget{class_simple_dumper}{
+\section{SimpleDumper Class Reference}
+\label{class_simple_dumper}\index{SimpleDumper@{SimpleDumper}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_dumper_a98625cdd0b0a6c6a79d241c61948d503}{describeValue} (\$value)
+\item 
+\hyperlink{class_simple_dumper_a9227e45302efff30362ace986e212e0f}{getType} (\$value)
+\item 
+\hyperlink{class_simple_dumper_a78fae8eec932f81837b42b3a04edaed4}{describeDifference} (\$first, \$second, \$identical=false)
+\item 
+\hyperlink{class_simple_dumper_a42de5f42d63586d40792e87e7089f76e}{\_\-isTypeMatch} (\$first, \$second)
+\item 
+\hyperlink{class_simple_dumper_ac86927b4e1d50b38568e384921703abc}{clipString} (\$value, \$size, \$position=0)
+\item 
+\hyperlink{class_simple_dumper_a34d972570eebff32d2bf3ac5486be532}{\_\-describeGenericDifference} (\$first, \$second)
+\item 
+\hyperlink{class_simple_dumper_a435904932e367610ff8d534b0c7fead0}{\_\-describeNullDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_a7985db05f6a6efc44fe11dda9af19e8b}{\_\-describeBooleanDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_ae437e663ab617a81ecad026150095bb3}{\_\-describeStringDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_a8c66c59f6d285144cafdc6a98b47beb8}{\_\-describeIntegerDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_a258987baad05d711b2cb6dd62f20ec90}{\_\-describeFloatDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_afd7841060f7d5b0ef8307ec085bdc105}{\_\-describeArrayDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_ac0da3bfc6ffa456da3d5aa360f70aed8}{\_\-isMatchingKeys} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_a5b97a3602c33af778f5e9f0711e42073}{\_\-describeResourceDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_af8c3d07af65c9ffcf68a0089c98e6b24}{\_\-describeObjectDifference} (\$first, \$second, \$identical)
+\item 
+\hyperlink{class_simple_dumper_a64f96298601fcbfbf658b607096e8a73}{\_\-stringDiffersAt} (\$first, \$second)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_dumper_a7acdf399736c49015da241d4a4a2a55a}{dump} (\$variable)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_simple_dumper_afd7841060f7d5b0ef8307ec085bdc105}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeArrayDifference@{\_\-describeArrayDifference}}
+\index{\_\-describeArrayDifference@{\_\-describeArrayDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeArrayDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeArrayDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_afd7841060f7d5b0ef8307ec085bdc105}
+Creates a human readable description of the difference between two arrays. 
+\begin{DoxyParams}{Parameters}
+\item[{\em array}]\$first First array. \item[{\em mixed}]\$second Array to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a7985db05f6a6efc44fe11dda9af19e8b}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeBooleanDifference@{\_\-describeBooleanDifference}}
+\index{\_\-describeBooleanDifference@{\_\-describeBooleanDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeBooleanDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeBooleanDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_a7985db05f6a6efc44fe11dda9af19e8b}
+Creates a human readable description of the difference between a boolean and another variable. 
+\begin{DoxyParams}{Parameters}
+\item[{\em boolean}]\$first First boolean. \item[{\em mixed}]\$second Boolean to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a258987baad05d711b2cb6dd62f20ec90}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeFloatDifference@{\_\-describeFloatDifference}}
+\index{\_\-describeFloatDifference@{\_\-describeFloatDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeFloatDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeFloatDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_a258987baad05d711b2cb6dd62f20ec90}
+Creates a human readable description of the difference between two floating point numbers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em float}]\$first First float. \item[{\em mixed}]\$second Float to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a34d972570eebff32d2bf3ac5486be532}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeGenericDifference@{\_\-describeGenericDifference}}
+\index{\_\-describeGenericDifference@{\_\-describeGenericDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeGenericDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeGenericDifference (\$ {\em first}, \/  \$ {\em second})}}
+\label{class_simple_dumper_a34d972570eebff32d2bf3ac5486be532}
+Creates a human readable description of the difference between two variables. The minimal version. 
+\begin{DoxyParams}{Parameters}
+\item[{\em null}]\$first First value. \item[{\em mixed}]\$second Value to compare with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a8c66c59f6d285144cafdc6a98b47beb8}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeIntegerDifference@{\_\-describeIntegerDifference}}
+\index{\_\-describeIntegerDifference@{\_\-describeIntegerDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeIntegerDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeIntegerDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_a8c66c59f6d285144cafdc6a98b47beb8}
+Creates a human readable description of the difference between an integer and another variable. 
+\begin{DoxyParams}{Parameters}
+\item[{\em integer}]\$first First number. \item[{\em mixed}]\$second Number to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a435904932e367610ff8d534b0c7fead0}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeNullDifference@{\_\-describeNullDifference}}
+\index{\_\-describeNullDifference@{\_\-describeNullDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeNullDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeNullDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_a435904932e367610ff8d534b0c7fead0}
+Creates a human readable description of the difference between a null and another variable. 
+\begin{DoxyParams}{Parameters}
+\item[{\em null}]\$first First null. \item[{\em mixed}]\$second Null to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_af8c3d07af65c9ffcf68a0089c98e6b24}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeObjectDifference@{\_\-describeObjectDifference}}
+\index{\_\-describeObjectDifference@{\_\-describeObjectDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeObjectDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeObjectDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_af8c3d07af65c9ffcf68a0089c98e6b24}
+Creates a human readable description of the difference between two objects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]\$first First object. \item[{\em mixed}]\$second Object to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a5b97a3602c33af778f5e9f0711e42073}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeResourceDifference@{\_\-describeResourceDifference}}
+\index{\_\-describeResourceDifference@{\_\-describeResourceDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeResourceDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeResourceDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_a5b97a3602c33af778f5e9f0711e42073}
+Creates a human readable description of the difference between a resource and another variable. 
+\begin{DoxyParams}{Parameters}
+\item[{\em resource}]\$first First resource. \item[{\em mixed}]\$second Resource to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_ae437e663ab617a81ecad026150095bb3}{
+\index{SimpleDumper@{SimpleDumper}!\_\-describeStringDifference@{\_\-describeStringDifference}}
+\index{\_\-describeStringDifference@{\_\-describeStringDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-describeStringDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-describeStringDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_ae437e663ab617a81ecad026150095bb3}
+Creates a human readable description of the difference between a string and another variable. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$first First string. \item[{\em mixed}]\$second String to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable description.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_ac0da3bfc6ffa456da3d5aa360f70aed8}{
+\index{SimpleDumper@{SimpleDumper}!\_\-isMatchingKeys@{\_\-isMatchingKeys}}
+\index{\_\-isMatchingKeys@{\_\-isMatchingKeys}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-isMatchingKeys}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-isMatchingKeys (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical})}}
+\label{class_simple_dumper_ac0da3bfc6ffa456da3d5aa360f70aed8}
+Compares two arrays to see if their key lists match. For an identical match, the ordering and types of the keys is significant. 
+\begin{DoxyParams}{Parameters}
+\item[{\em array}]\$first First array. \item[{\em array}]\$second Array to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if matching.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a42de5f42d63586d40792e87e7089f76e}{
+\index{SimpleDumper@{SimpleDumper}!\_\-isTypeMatch@{\_\-isTypeMatch}}
+\index{\_\-isTypeMatch@{\_\-isTypeMatch}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-isTypeMatch}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-isTypeMatch (\$ {\em first}, \/  \$ {\em second})}}
+\label{class_simple_dumper_a42de5f42d63586d40792e87e7089f76e}
+Tests to see if types match. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$first First variable. \item[{\em mixed}]\$second Value to compare with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if matches.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a64f96298601fcbfbf658b607096e8a73}{
+\index{SimpleDumper@{SimpleDumper}!\_\-stringDiffersAt@{\_\-stringDiffersAt}}
+\index{\_\-stringDiffersAt@{\_\-stringDiffersAt}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{\_\-stringDiffersAt}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::\_\-stringDiffersAt (\$ {\em first}, \/  \$ {\em second})}}
+\label{class_simple_dumper_a64f96298601fcbfbf658b607096e8a73}
+Find the first character position that differs in two strings by binary chop. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$first First string. \item[{\em string}]\$second String to compare with. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer Position of first differing character.  private 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_ac86927b4e1d50b38568e384921703abc}{
+\index{SimpleDumper@{SimpleDumper}!clipString@{clipString}}
+\index{clipString@{clipString}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{clipString}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::clipString (\$ {\em value}, \/  \$ {\em size}, \/  \$ {\em position} = {\ttfamily 0})}}
+\label{class_simple_dumper_ac86927b4e1d50b38568e384921703abc}
+Clips a string to a maximum length. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$value String to truncate. \item[{\em integer}]\$size Minimum string size to show. \item[{\em integer}]\$position Centre of string section. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Shortened version.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a78fae8eec932f81837b42b3a04edaed4}{
+\index{SimpleDumper@{SimpleDumper}!describeDifference@{describeDifference}}
+\index{describeDifference@{describeDifference}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{describeDifference}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::describeDifference (\$ {\em first}, \/  \$ {\em second}, \/  \$ {\em identical} = {\ttfamily false})}}
+\label{class_simple_dumper_a78fae8eec932f81837b42b3a04edaed4}
+Creates a human readable description of the difference between two variables. Uses a dynamic call. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$first First variable. \item[{\em mixed}]\$second Value to compare with. \item[{\em boolean}]\$identical If true then type anomolies count. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Description of difference.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a98625cdd0b0a6c6a79d241c61948d503}{
+\index{SimpleDumper@{SimpleDumper}!describeValue@{describeValue}}
+\index{describeValue@{describeValue}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{describeValue}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::describeValue (\$ {\em value})}}
+\label{class_simple_dumper_a98625cdd0b0a6c6a79d241c61948d503}
+Renders a variable in a shorter form than print\_\-r(). 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$value Variable to render as a string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Human readable string form.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a7acdf399736c49015da241d4a4a2a55a}{
+\index{SimpleDumper@{SimpleDumper}!dump@{dump}}
+\index{dump@{dump}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::dump (\$ {\em variable})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_simple_dumper_a7acdf399736c49015da241d4a4a2a55a}
+Sends a formatted dump of a variable to a string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$variable Variable to display. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Output from print\_\-r().  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_dumper_a9227e45302efff30362ace986e212e0f}{
+\index{SimpleDumper@{SimpleDumper}!getType@{getType}}
+\index{getType@{getType}!SimpleDumper@{SimpleDumper}}
+\subsubsection[{getType}]{\setlength{\rightskip}{0pt plus 5cm}SimpleDumper::getType (\$ {\em value})}}
+\label{class_simple_dumper_a9227e45302efff30362ace986e212e0f}
+Gets the string representation of a type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mixed}]\$value Variable to check against. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Type.  public 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest/dumper.php\end{DoxyCompactItemize}

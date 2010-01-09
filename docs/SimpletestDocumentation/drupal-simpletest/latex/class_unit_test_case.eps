@@ -1,0 +1,748 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 4357.37
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.114748 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 139 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(UnitTestCase) cw
+(FailingUnitTestCaseOutput) cw
+(LiveHttpTestCase) cw
+(LoadIfIncludedTestCase) cw
+(PassingUnitTestCaseOutput) cw
+(ShouldNeverBeRun) cw
+(test1) cw
+(TestCaseWithParseError) cw
+(TestOfAbsoluteUrls) cw
+(TestOfAbstractsWithAbstractMethods) cw
+(TestOfAdditionalHeaders) cw
+(TestOfAnythingExpectation) cw
+(TestOfAuthenticator) cw
+(TestOfAuthorisation) cw
+(TestOfBadHosts) cw
+(TestOfBrowserCookies) cw
+(TestOfBrowserFrames) cw
+(TestOfBrowserNavigation) cw
+(TestOfCallingTearDownAfterExceptions) cw
+(TestOfCallSchedule) cw
+(TestOfCatchingExceptions) cw
+(TestOfCheckbox) cw
+(TestOfCollector) cw
+(TestOfCommandLineParsing) cw
+(TestOfCompatibility) cw
+(TestOfContext) cw
+(TestOfCookie) cw
+(TestOfCookieJar) cw
+(TestOfDirectRoute) cw
+(TestOfEclipse) cw
+(TestOfEncodedParts) cw
+(TestOfEncoding) cw
+(TestOfEquality) cw
+(TestOfErrorQueue) cw
+(TestOfErrors) cw
+(TestOfErrorsExcludingPHP52AndAbove) cw
+(TestOfErrorTrap) cw
+(TestOfExceptionExpectation) cw
+(TestOfExceptionThrownInSetUpDoesNotRunTestBody) cw
+(TestOfExceptionTrap) cw
+(TestOfExpectExceptionWithSetUp) cw
+(TestOfFetchingUrlParameters) cw
+(TestOfFieldExpectation) cw
+(TestOfForm) cw
+(TestOfFormHeaders) cw
+(TestOfFormsCreatedFromEventStream) cw
+(TestOfFrameNavigation) cw
+(TestOfFrameset) cw
+(TestOfFramesetPageInterface) cw
+(TestOfFrameUrl) cw
+(TestOfHeaderExpectations) cw
+(TestOfHistory) cw
+(TestOfHtmlPage) cw
+(TestOfHtmlSaxParser) cw
+(TestOfHttpHeaders) cw
+(TestOfHttpPostRequest) cw
+(TestOfHttpRedirects) cw
+(TestOfHttpRequest) cw
+(TestOfHttpResponse) cw
+(TestOfIdentity) cw
+(TestOfImplementations) cw
+(TestOfInequality) cw
+(TestOfInterfaceMocksWithConstruct) cw
+(TestOfInterfaceMocksWithHintInSignature) cw
+(TestOfIsA) cw
+(TestOfLabelTag) cw
+(TestOfLeftOverErrors) cw
+(TestOfLexer) cw
+(TestOfLexerHandlers) cw
+(TestOfLexerModes) cw
+(TestOfLiveBrowser) cw
+(TestOfMethodExistence) cw
+(TestOfMockComparisons) cw
+(TestOfMockExpectations) cw
+(TestOfMockExpectationsThatPass) cw
+(TestOfMockGeneration) cw
+(TestOfMockingClassesWithStaticMethods) cw
+(TestOfMockInterfaces) cw
+(TestOfMockObjectsOutput) cw
+(TestOfMockReturns) cw
+(TestOfNestingTags) cw
+(TestOfNonIdentity) cw
+(TestOfNotA) cw
+(TestOfNotEnoughErrors) cw
+(TestOfPageBuilder) cw
+(TestOfPageHeaders) cw
+(TestOfPageInterface) cw
+(TestOfPageParsing) cw
+(TestOfPageScraping) cw
+(TestOfParallelRegex) cw
+(TestOfParametersExpectation) cw
+(TestOfParsedPageAccess) cw
+(TestOfPartialMocks) cw
+(TestOfPastBugs) cw
+(TestOfPatternCollector) cw
+(TestOfPatterns) cw
+(TestOfPHP4StyleSuperClassConstruct) cw
+(TestOfPHP52RecoverableErrors) cw
+(TestOfPHP5AbstractMethodMocking) cw
+(TestOfPHP5StaticMethodMocking) cw
+(TestOfProxyRoute) cw
+(TestOfRadioGroup) cw
+(TestOfRealm) cw
+(TestOfReference) cw
+(TestOfReflection) cw
+(TestOfReflection) cw
+(TestOfReflectionWithTypeHints) cw
+(TestOfSampleInterfaceWithClone) cw
+(TestOfSelection) cw
+(TestOfShell) cw
+(TestOfSimpleHtmlLexer) cw
+(TestOfSimpleSignatureMap) cw
+(TestOfSimpleStickyError) cw
+(TestOfSkippingNoMatterWhat) cw
+(TestOfSkippingOrElse) cw
+(TestOfSkippingTwiceOver) cw
+(TestOfSpecialMethods) cw
+(TestOfSpl) cw
+(TestOfStackTrace) cw
+(TestOfStateStack) cw
+(TestOfTag) cw
+(TestOfTagGroup) cw
+(TestOfTestDoxReporter) cw
+(TestOfTextArea) cw
+(TestOfTextExpectations) cw
+(TestOfTextExtraction) cw
+(TestOfTextFormatting) cw
+(TestOfThrowingErrorsFromMocks) cw
+(TestOfThrowingExceptionsFromMocks) cw
+(TestOfThrowingExceptionsInTearDown) cw
+(TestOfUnitTester) cw
+(TestOfUploadWidget) cw
+(TestOfUrl) cw
+(TestOfWidget) cw
+(TestOfWithin) cw
+(TestOfXmlResultsParsing) cw
+(TestOfXmlStructureParsing) cw
+(TestRunnerForLeftOverAndNotEnoughErrors) cw
+(TestThatShouldNotBeSkipped) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (UnitTestCase) 0 138 box
+ (FailingUnitTestCaseOutput) 1 137 box
+ (LiveHttpTestCase) 1 136 box
+ (LoadIfIncludedTestCase) 1 135 box
+ (PassingUnitTestCaseOutput) 1 134 box
+ (ShouldNeverBeRun) 1 133 box
+1 133 mark
+ (test1) 1 132 box
+ (TestCaseWithParseError) 1 131 box
+ (TestOfAbsoluteUrls) 1 130 box
+ (TestOfAbstractsWithAbstractMethods) 1 129 box
+ (TestOfAdditionalHeaders) 1 128 box
+ (TestOfAnythingExpectation) 1 127 box
+ (TestOfAuthenticator) 1 126 box
+ (TestOfAuthorisation) 1 125 box
+ (TestOfBadHosts) 1 124 box
+ (TestOfBrowserCookies) 1 123 box
+ (TestOfBrowserFrames) 1 122 box
+ (TestOfBrowserNavigation) 1 121 box
+ (TestOfCallingTearDownAfterExceptions) 1 120 box
+ (TestOfCallSchedule) 1 119 box
+ (TestOfCatchingExceptions) 1 118 box
+ (TestOfCheckbox) 1 117 box
+ (TestOfCollector) 1 116 box
+ (TestOfCommandLineParsing) 1 115 box
+ (TestOfCompatibility) 1 114 box
+ (TestOfContext) 1 113 box
+ (TestOfCookie) 1 112 box
+ (TestOfCookieJar) 1 111 box
+ (TestOfDirectRoute) 1 110 box
+ (TestOfEclipse) 1 109 box
+ (TestOfEncodedParts) 1 108 box
+ (TestOfEncoding) 1 107 box
+ (TestOfEquality) 1 106 box
+ (TestOfErrorQueue) 1 105 box
+ (TestOfErrors) 1 104 box
+ (TestOfErrorsExcludingPHP52AndAbove) 1 103 box
+ (TestOfErrorTrap) 1 102 box
+ (TestOfExceptionExpectation) 1 101 box
+ (TestOfExceptionThrownInSetUpDoesNotRunTestBody) 1 100 box
+ (TestOfExceptionTrap) 1 99 box
+ (TestOfExpectExceptionWithSetUp) 1 98 box
+ (TestOfFetchingUrlParameters) 1 97 box
+ (TestOfFieldExpectation) 1 96 box
+ (TestOfForm) 1 95 box
+ (TestOfFormHeaders) 1 94 box
+ (TestOfFormsCreatedFromEventStream) 1 93 box
+ (TestOfFrameNavigation) 1 92 box
+ (TestOfFrameset) 1 91 box
+ (TestOfFramesetPageInterface) 1 90 box
+ (TestOfFrameUrl) 1 89 box
+ (TestOfHeaderExpectations) 1 88 box
+ (TestOfHistory) 1 87 box
+ (TestOfHtmlPage) 1 86 box
+ (TestOfHtmlSaxParser) 1 85 box
+ (TestOfHttpHeaders) 1 84 box
+ (TestOfHttpPostRequest) 1 83 box
+ (TestOfHttpRedirects) 1 82 box
+ (TestOfHttpRequest) 1 81 box
+ (TestOfHttpResponse) 1 80 box
+ (TestOfIdentity) 1 79 box
+ (TestOfImplementations) 1 78 box
+ (TestOfInequality) 1 77 box
+ (TestOfInterfaceMocksWithConstruct) 1 76 box
+ (TestOfInterfaceMocksWithHintInSignature) 1 75 box
+ (TestOfIsA) 1 74 box
+ (TestOfLabelTag) 1 73 box
+ (TestOfLeftOverErrors) 1 72 box
+ (TestOfLexer) 1 71 box
+ (TestOfLexerHandlers) 1 70 box
+ (TestOfLexerModes) 1 69 box
+ (TestOfLiveBrowser) 1 68 box
+ (TestOfMethodExistence) 1 67 box
+ (TestOfMockComparisons) 1 66 box
+ (TestOfMockExpectations) 1 65 box
+ (TestOfMockExpectationsThatPass) 1 64 box
+ (TestOfMockGeneration) 1 63 box
+ (TestOfMockingClassesWithStaticMethods) 1 62 box
+ (TestOfMockInterfaces) 1 61 box
+ (TestOfMockObjectsOutput) 1 60 box
+ (TestOfMockReturns) 1 59 box
+ (TestOfNestingTags) 1 58 box
+ (TestOfNonIdentity) 1 57 box
+ (TestOfNotA) 1 56 box
+ (TestOfNotEnoughErrors) 1 55 box
+ (TestOfPageBuilder) 1 54 box
+ (TestOfPageHeaders) 1 53 box
+ (TestOfPageInterface) 1 52 box
+ (TestOfPageParsing) 1 51 box
+ (TestOfPageScraping) 1 50 box
+ (TestOfParallelRegex) 1 49 box
+ (TestOfParametersExpectation) 1 48 box
+ (TestOfParsedPageAccess) 1 47 box
+ (TestOfPartialMocks) 1 46 box
+ (TestOfPastBugs) 1 45 box
+ (TestOfPatternCollector) 1 44 box
+ (TestOfPatterns) 1 43 box
+ (TestOfPHP4StyleSuperClassConstruct) 1 42 box
+ (TestOfPHP52RecoverableErrors) 1 41 box
+ (TestOfPHP5AbstractMethodMocking) 1 40 box
+ (TestOfPHP5StaticMethodMocking) 1 39 box
+ (TestOfProxyRoute) 1 38 box
+ (TestOfRadioGroup) 1 37 box
+ (TestOfRealm) 1 36 box
+ (TestOfReference) 1 35 box
+ (TestOfReflection) 1 34 box
+ (TestOfReflection) 1 33 box
+ (TestOfReflectionWithTypeHints) 1 32 box
+ (TestOfSampleInterfaceWithClone) 1 31 box
+ (TestOfSelection) 1 30 box
+ (TestOfShell) 1 29 box
+ (TestOfSimpleHtmlLexer) 1 28 box
+ (TestOfSimpleSignatureMap) 1 27 box
+ (TestOfSimpleStickyError) 1 26 box
+ (TestOfSkippingNoMatterWhat) 1 25 box
+ (TestOfSkippingOrElse) 1 24 box
+ (TestOfSkippingTwiceOver) 1 23 box
+ (TestOfSpecialMethods) 1 22 box
+ (TestOfSpl) 1 21 box
+ (TestOfStackTrace) 1 20 box
+ (TestOfStateStack) 1 19 box
+ (TestOfTag) 1 18 box
+ (TestOfTagGroup) 1 17 box
+ (TestOfTestDoxReporter) 1 16 box
+ (TestOfTextArea) 1 15 box
+ (TestOfTextExpectations) 1 14 box
+ (TestOfTextExtraction) 1 13 box
+ (TestOfTextFormatting) 1 12 box
+ (TestOfThrowingErrorsFromMocks) 1 11 box
+ (TestOfThrowingExceptionsFromMocks) 1 10 box
+ (TestOfThrowingExceptionsInTearDown) 1 9 box
+ (TestOfUnitTester) 1 8 box
+ (TestOfUploadWidget) 1 7 box
+ (TestOfUrl) 1 6 box
+ (TestOfWidget) 1 5 box
+ (TestOfWithin) 1 4 box
+ (TestOfXmlResultsParsing) 1 3 box
+ (TestOfXmlStructureParsing) 1 2 box
+ (TestRunnerForLeftOverAndNotEnoughErrors) 1 1 box
+ (TestThatShouldNotBeSkipped) 1 0 box
+
+% ----- relations -----
+
+solid
+1 0 137.25 out
+solid
+0 0 137.5 hedge
+solid
+0 0 136.5 hedge
+solid
+0 0 135.5 hedge
+solid
+0 0 134.5 hedge
+solid
+0 0 133.5 hedge
+solid
+0 0 132.5 hedge
+solid
+0 0 131.5 hedge
+solid
+0 0 130.5 hedge
+solid
+0 0 129.5 hedge
+solid
+0 0 128.5 hedge
+solid
+0 0 127.5 hedge
+solid
+0 0 126.5 hedge
+solid
+0 0 125.5 hedge
+solid
+0 0 124.5 hedge
+solid
+0 0 123.5 hedge
+solid
+0 0 122.5 hedge
+solid
+0 0 121.5 hedge
+solid
+0 0 120.5 hedge
+solid
+0 0 119.5 hedge
+solid
+0 0 118.5 hedge
+solid
+0 0 117.5 hedge
+solid
+0 0 116.5 hedge
+solid
+0 0 115.5 hedge
+solid
+0 0 114.5 hedge
+solid
+0 0 113.5 hedge
+solid
+0 0 112.5 hedge
+solid
+0 0 111.5 hedge
+solid
+0 0 110.5 hedge
+solid
+0 0 109.5 hedge
+solid
+0 0 108.5 hedge
+solid
+0 0 107.5 hedge
+solid
+0 0 106.5 hedge
+solid
+0 0 105.5 hedge
+solid
+0 0 104.5 hedge
+solid
+0 0 103.5 hedge
+solid
+0 0 102.5 hedge
+solid
+0 0 101.5 hedge
+solid
+0 0 100.5 hedge
+solid
+0 0 99.5 hedge
+solid
+0 0 98.5 hedge
+solid
+0 0 97.5 hedge
+solid
+0 0 96.5 hedge
+solid
+0 0 95.5 hedge
+solid
+0 0 94.5 hedge
+solid
+0 0 93.5 hedge
+solid
+0 0 92.5 hedge
+solid
+0 0 91.5 hedge
+solid
+0 0 90.5 hedge
+solid
+0 0 89.5 hedge
+solid
+0 0 88.5 hedge
+solid
+0 0 87.5 hedge
+solid
+0 0 86.5 hedge
+solid
+0 0 85.5 hedge
+solid
+0 0 84.5 hedge
+solid
+0 0 83.5 hedge
+solid
+0 0 82.5 hedge
+solid
+0 0 81.5 hedge
+solid
+0 0 80.5 hedge
+solid
+0 0 79.5 hedge
+solid
+0 0 78.5 hedge
+solid
+0 0 77.5 hedge
+solid
+0 0 76.5 hedge
+solid
+0 0 75.5 hedge
+solid
+0 0 74.5 hedge
+solid
+0 0 73.5 hedge
+solid
+0 0 72.5 hedge
+solid
+0 0 71.5 hedge
+solid
+0 0 70.5 hedge
+solid
+0 0 69.5 hedge
+solid
+0 0 68.5 hedge
+solid
+0 0 67.5 hedge
+solid
+0 0 66.5 hedge
+solid
+0 0 65.5 hedge
+solid
+0 0 64.5 hedge
+solid
+0 0 63.5 hedge
+solid
+0 0 62.5 hedge
+solid
+0 0 61.5 hedge
+solid
+0 0 60.5 hedge
+solid
+0 0 59.5 hedge
+solid
+0 0 58.5 hedge
+solid
+0 0 57.5 hedge
+solid
+0 0 56.5 hedge
+solid
+0 0 55.5 hedge
+solid
+0 0 54.5 hedge
+solid
+0 0 53.5 hedge
+solid
+0 0 52.5 hedge
+solid
+0 0 51.5 hedge
+solid
+0 0 50.5 hedge
+solid
+0 0 49.5 hedge
+solid
+0 0 48.5 hedge
+solid
+0 0 47.5 hedge
+solid
+0 0 46.5 hedge
+solid
+0 0 45.5 hedge
+solid
+0 0 44.5 hedge
+solid
+0 0 43.5 hedge
+solid
+0 0 42.5 hedge
+solid
+0 0 41.5 hedge
+solid
+0 0 40.5 hedge
+solid
+0 0 39.5 hedge
+solid
+0 0 38.5 hedge
+solid
+0 0 37.5 hedge
+solid
+0 0 36.5 hedge
+solid
+0 0 35.5 hedge
+solid
+0 0 34.5 hedge
+solid
+0 0 33.5 hedge
+solid
+0 0 32.5 hedge
+solid
+0 0 31.5 hedge
+solid
+0 0 30.5 hedge
+solid
+0 0 29.5 hedge
+solid
+0 0 28.5 hedge
+solid
+0 0 27.5 hedge
+solid
+0 0 26.5 hedge
+solid
+0 0 25.5 hedge
+solid
+0 0 24.5 hedge
+solid
+0 0 23.5 hedge
+solid
+0 0 22.5 hedge
+solid
+0 0 21.5 hedge
+solid
+0 0 20.5 hedge
+solid
+0 0 19.5 hedge
+solid
+0 0 18.5 hedge
+solid
+0 0 17.5 hedge
+solid
+0 0 16.5 hedge
+solid
+0 0 15.5 hedge
+solid
+0 0 14.5 hedge
+solid
+0 0 13.5 hedge
+solid
+0 0 12.5 hedge
+solid
+0 0 11.5 hedge
+solid
+0 0 10.5 hedge
+solid
+0 0 9.5 hedge
+solid
+0 0 8.5 hedge
+solid
+0 0 7.5 hedge
+solid
+0 0 6.5 hedge
+solid
+0 0 5.5 hedge
+solid
+0 0 4.5 hedge
+solid
+0 0 3.5 hedge
+solid
+0 0 2.5 hedge
+solid
+0 0 1.5 hedge
+solid
+0 0 0.5 hedge
+solid
+0 138 0.5 vedge

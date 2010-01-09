@@ -1,0 +1,63 @@
+\hypertarget{class_simple_shell}{
+\section{SimpleShell Class Reference}
+\label{class_simple_shell}\index{SimpleShell@{SimpleShell}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_shell_a78ce94ced3359a08496e33956aee82d3}{SimpleShell} ()
+\item 
+\hyperlink{class_simple_shell_af50daa9990b46e1e978c6f17c371238d}{execute} (\$command)
+\item 
+\hyperlink{class_simple_shell_ad4bbebad7ddf292f1acaffc00ec85dd0}{getOutput} ()
+\item 
+\hyperlink{class_simple_shell_a986a839480a739e7fc9b14864bfa7e20}{getOutputAsList} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_shell_adf2a54735b82c2975b0f1f09de0954dd}{
+{\bfseries \$\_\-output}}
+\label{class_simple_shell_adf2a54735b82c2975b0f1f09de0954dd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_simple_shell_af50daa9990b46e1e978c6f17c371238d}{
+\index{SimpleShell@{SimpleShell}!execute@{execute}}
+\index{execute@{execute}!SimpleShell@{SimpleShell}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}SimpleShell::execute (\$ {\em command})}}
+\label{class_simple_shell_af50daa9990b46e1e978c6f17c371238d}
+Actually runs the command. Does not trap the error stream output as this need PHP 4.3+. 
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]\$command The actual command line to run. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer Exit code.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_shell_ad4bbebad7ddf292f1acaffc00ec85dd0}{
+\index{SimpleShell@{SimpleShell}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!SimpleShell@{SimpleShell}}
+\subsubsection[{getOutput}]{\setlength{\rightskip}{0pt plus 5cm}SimpleShell::getOutput ()}}
+\label{class_simple_shell_ad4bbebad7ddf292f1acaffc00ec85dd0}
+Accessor for the last output. \begin{DoxyReturn}{Returns}
+string Output as text.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_shell_a986a839480a739e7fc9b14864bfa7e20}{
+\index{SimpleShell@{SimpleShell}!getOutputAsList@{getOutputAsList}}
+\index{getOutputAsList@{getOutputAsList}!SimpleShell@{SimpleShell}}
+\subsubsection[{getOutputAsList}]{\setlength{\rightskip}{0pt plus 5cm}SimpleShell::getOutputAsList ()}}
+\label{class_simple_shell_a986a839480a739e7fc9b14864bfa7e20}
+Accessor for the last output. \begin{DoxyReturn}{Returns}
+array Output as array of lines.  public 
+\end{DoxyReturn}
+\hypertarget{class_simple_shell_a78ce94ced3359a08496e33956aee82d3}{
+\index{SimpleShell@{SimpleShell}!SimpleShell@{SimpleShell}}
+\index{SimpleShell@{SimpleShell}!SimpleShell@{SimpleShell}}
+\subsubsection[{SimpleShell}]{\setlength{\rightskip}{0pt plus 5cm}SimpleShell::SimpleShell ()}}
+\label{class_simple_shell_a78ce94ced3359a08496e33956aee82d3}
+Executes the shell comand and stashes the output.  public 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Applications/MAMP/htdocs/drump/drupalcodedump.com/sites/all/modules/simpletest/simpletest/shell\_\-tester.php\end{DoxyCompactItemize}
