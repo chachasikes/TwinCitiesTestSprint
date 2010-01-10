@@ -6,9 +6,9 @@ dependencies[] = geo
 dependencies[] = content
 core = 6.x
 
-; Information added by drupal.org packaging script on 2009-12-22
+; Information added by drupal.org packaging script on 2010-01-08
 version = "6.x-1.x-dev"
 core = "6.x"
 project = "geo"
-datestamp = "1261440425"
+datestamp = "1262909304"
 
